@@ -4,6 +4,12 @@ Playlist.json is a lightweight, front-end-only web application that serves YouTu
 
 ![cover image](cover.png)
 
+
+*EXAMPLES*
+- [Music Application](https://tezumie.github.io/Playlist.json/?gitlist=Tezumie/Playlist.json/refs/heads/main/playlists/music);
+  
+- [P5 Tutorials](https://tezumie.github.io/Playlist.json/?playlist=p5-Tutorials);
+
 ## ✨ Features
 
 - **Frontend-Only Implementation**: Runs entirely on HTML, CSS, and JavaScript. No API keys or server-side code needed.
