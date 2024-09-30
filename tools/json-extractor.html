@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Playlist JSON Extractor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --color-background: #ffffff;
+            --color-primary: #ffffff;
+            --color-secondary: #ececec;
+            --color-accent: #000000;
+            --color-accent-hover: #1b7eff;
+            --color-accent-text: #ffffff;
+            --color-text: #000000;
+            --color-text-secondary: #595959;
+            --color-border: #e7e7e7;
+            --color-hover: #ececec;
+            --color-card-bg: #f7f7f7;
+            --font-family: 'IBM Plex Sans', sans-serif;
+            --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.0);
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: var(--font-family);
+            font-size: 16px;
+            color: var(--color-text);
+            background-color: var(--color-background);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding: 20px;
+            background: var(--color-primary);
+            border-radius: 0px;
+            box-shadow: var(--shadow-card);
+            border: 1px solid var(--color-border);
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 20px;
+            font-family: 'IBM Plex Mono', monospace;
+            color: var(--color-accent-hover);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            color: var(--color-text-secondary);
+            font-size: 16px;
+            margin-bottom: 20px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        .textarea-container {
+            margin: 20px 0;
+        }
+
+        textarea {
+            width: calc(100% - 30px);
+            height: 250px;
+            padding: 15px;
+            border: 1px solid var(--color-border);
+            border-radius: 10px;
+            background: var(--color-card-bg);
+            resize: vertical;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: var(--color-accent);
+            color: var(--color-accent-text);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: var(--color-accent-hover);
+        }
+
+        .output-container {
+            margin: 20px 0;
+        }
+
+        .output {
+            padding: 15px;
+            background: var(--color-secondary);
+            border-radius: 10px;
+            white-space: pre-wrap;
+            font-family: 'IBM Plex Mono', monospace;
+            height: 300px;
+            overflow-y: auto;
+            border: 1px solid var(--color-border);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">Playlist.json</div>
+        <h1>YouTube Playlist JSON Extractor</h1>
+        <p>1. Open the YouTube playlist page.<br> 2. Right-click and select "View Page Source" (`Ctrl+U` or `Cmd+U`).<br> 3. Copy all the HTML code and paste it in the box below.
+        </p>
+        <em style="display: block; text-align: center; margin-bottom: 20px; color: var(--color-warning);">Note: Only the first 100 songs of a playlist will be captured.</em>
+
+        <div class="textarea-container">
+            <textarea id="html-input" placeholder="Paste YouTube playlist HTML source code here..."></textarea>
+        </div>
+
+        <div class="button-container">
+            <button onclick="extractData()">Extract Playlist Data</button>
+            <button onclick="copyToClipboard()">Copy Extracted Data</button>
+        </div>
+
+        <div class="output-container">
+            <h2 style="text-align: center;">Extracted Playlist Data:</h2>
+            <div id="output" class="output"></div>
+        </div>
+    </div>
+
+    <script>
+        function extractData() {
+      const htmlInput = document.getElementById("html-input").value;
+
+      if (!htmlInput.trim()) {
+        alert("Please paste the HTML source code of a YouTube playlist.");
+        return;
+      }
+
+      const combinedPattern = /"playlistVideoRenderer":{.*?"videoId":"([a-zA-Z0-9_-]{11})".*?"title":{"runs":\[{"text":"(.*?)"}\].*?"shortBylineText":{"runs":\[{"text":"(.*?)"}\]/g;
+
+      try {
+        const matches = [...htmlInput.matchAll(combinedPattern)];
+        const playlistData = [];
+
+        for (const match of matches) {
+          const videoId = match[1];
+          const title = match[2];
+          let artist = match[3];
+          artist = cleanArtistName(artist);
+          const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+          playlistData.push({ title, videoId, thumbnail, artist });
+        }
+
+        const outputElement = document.getElementById("output");
+        outputElement.textContent = JSON.stringify(playlistData, null, 2);
+      } catch (error) {
+        alert("An error occurred while processing the data. Please check the HTML source and try again.");
+        console.error("Error extracting data:", error);
+      }
+    }
+
+    function cleanArtistName(artist) {
+      return artist.split('","')[0];
+    }
+
+    function copyToClipboard() {
+      const outputElement = document.getElementById("output");
+      const textToCopy = outputElement.textContent;
+
+      if (!textToCopy.trim()) {
+        alert("No data to copy! Please extract the playlist data first.");
+        return;
+      }
+
+      navigator.clipboard.writeText(textToCopy)
+        .then(() => alert("Data copied to clipboard!"))
+        .catch(() => alert("Failed to copy data."));
+    }
+    </script>
+
+</body>
+
+</html>
