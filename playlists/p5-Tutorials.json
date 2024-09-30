@@ -1,0 +1,493 @@
+{
+    "categories": [
+        {
+            "name": "The Coding Train",
+            "playlists": [
+                {
+                    "name": "Start Learning Here!",
+                    "description": "Beginners! Learn all the basics of code (variables, conditionals, loops, objects, arrays) in JavaScript with p5.js!",
+                    "songs": [
+                        {
+                            "title": "Code! Programming with p5.js for Beginners Trailer",
+                            "videoId": "HerCR8bw_GE",
+                            "thumbnail": "https://img.youtube.com/vi/HerCR8bw_GE/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Creative Coding for Beginners with p5.js (1.1)",
+                            "videoId": "yPWkPOfnGsw",
+                            "thumbnail": "https://img.youtube.com/vi/yPWkPOfnGsw/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "How to Use to p5.js Web Editor (1.2)",
+                            "videoId": "MXs1cOlidWs",
+                            "thumbnail": "https://img.youtube.com/vi/MXs1cOlidWs/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Drawing Shapes in p5.js for Beginners (1.3)",
+                            "videoId": "c3TeLi6Ns1E",
+                            "thumbnail": "https://img.youtube.com/vi/c3TeLi6Ns1E/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "RGB Color in p5.js for Beginners (1.4)",
+                            "videoId": "riiJTF5-N7c",
+                            "thumbnail": "https://img.youtube.com/vi/riiJTF5-N7c/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Whoops! Errors in the p5.js Web Editor (1.5)",
+                            "videoId": "LuGsp5KeJMM",
+                            "thumbnail": "https://img.youtube.com/vi/LuGsp5KeJMM/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "How to Comment Your Code in p5.js (1.6)",
+                            "videoId": "xJcrPJuem5Q",
+                            "thumbnail": "https://img.youtube.com/vi/xJcrPJuem5Q/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "2.1: Variables in p5.js (mouseX, mouseY) - p5.js Tutorial",
+                            "videoId": "7A5tKW9HGoM",
+                            "thumbnail": "https://img.youtube.com/vi/7A5tKW9HGoM/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "2.2: Variables in p5.js (Define Your Own) - p5.js Tutorial",
+                            "videoId": "dRhXIIFp-ys",
+                            "thumbnail": "https://img.youtube.com/vi/dRhXIIFp-ys/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "2.3: Incrementation Operators - p5.js Tutorial",
+                            "videoId": "T26OJGjI8qI",
+                            "thumbnail": "https://img.youtube.com/vi/T26OJGjI8qI/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "2.4: random() Function - p5.js Tutorial",
+                            "videoId": "POn4cZ0jL-o",
+                            "thumbnail": "https://img.youtube.com/vi/POn4cZ0jL-o/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "2.5: The map() Function - p5.js Tutorial",
+                            "videoId": "nicMAoW6u1g",
+                            "thumbnail": "https://img.youtube.com/vi/nicMAoW6u1g/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "2.6: createGraphics() - p5.js Tutorial",
+                            "videoId": "TaluaAD9MKA",
+                            "thumbnail": "https://img.youtube.com/vi/TaluaAD9MKA/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "3.1: Introduction to Conditional Statements - p5.js Tutorial",
+                            "videoId": "1Osb_iGDdjk",
+                            "thumbnail": "https://img.youtube.com/vi/1Osb_iGDdjk/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "3.2: The Bouncing Ball - p5.js Tutorial",
+                            "videoId": "LO3Awjn_gyU",
+                            "thumbnail": "https://img.youtube.com/vi/LO3Awjn_gyU/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "3.3: Else and Else if, AND and OR - p5.js Tutorial",
+                            "videoId": "r2S7j54I68c",
+                            "thumbnail": "https://img.youtube.com/vi/r2S7j54I68c/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "3.4: Boolean Variables - p5.js Tutorial",
+                            "videoId": "Rk-_syQluvc",
+                            "thumbnail": "https://img.youtube.com/vi/Rk-_syQluvc/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "4.1: while and for Loops - p5.js tutorial",
+                            "videoId": "cnRD9o6odjk",
+                            "thumbnail": "https://img.youtube.com/vi/cnRD9o6odjk/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "4.2: Nested Loops - p5.js Tutorial",
+                            "videoId": "1c1_TMdf8b8",
+                            "thumbnail": "https://img.youtube.com/vi/1c1_TMdf8b8/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "5.1: Function Basics - p5.js Tutorial",
+                            "videoId": "wRHAitGzBrg",
+                            "thumbnail": "https://img.youtube.com/vi/wRHAitGzBrg/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "5.2: Function Parameters and Arguments - p5.js Tutorial",
+                            "videoId": "zkc417YapfE",
+                            "thumbnail": "https://img.youtube.com/vi/zkc417YapfE/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "5.3: Functions and Return - p5.js Tutorial",
+                            "videoId": "qRnUBiTJ66Y",
+                            "thumbnail": "https://img.youtube.com/vi/qRnUBiTJ66Y/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "6.1: Introduction to Object-Oriented Programming with ES6 - p5.js Tutorial",
+                            "videoId": "xG2Vbnv0wvg",
+                            "thumbnail": "https://img.youtube.com/vi/xG2Vbnv0wvg/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "6.2: Classes in JavaScript with ES6 - p5.js Tutorial",
+                            "videoId": "T-HGdc8L-7w",
+                            "thumbnail": "https://img.youtube.com/vi/T-HGdc8L-7w/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "6.3: Constructor Arguments with Classes in JavaScript - p5.js Tutorial",
+                            "videoId": "rHiSsgFRgx4",
+                            "thumbnail": "https://img.youtube.com/vi/rHiSsgFRgx4/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "6.4: p5.js Web Editor: Adding JavaScript Files",
+                            "videoId": "5nf41qLeagU",
+                            "thumbnail": "https://img.youtube.com/vi/5nf41qLeagU/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "7.1: What is an array? - p5.js Tutorial",
+                            "videoId": "VIQoUghHSxU",
+                            "thumbnail": "https://img.youtube.com/vi/VIQoUghHSxU/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "7.2: Arrays and Loops - p5.js Tutorial",
+                            "videoId": "RXWO3mFuW-I",
+                            "thumbnail": "https://img.youtube.com/vi/RXWO3mFuW-I/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "7.3: Arrays of Objects - p5.js Tutorial",
+                            "videoId": "fBqaA7zRO58",
+                            "thumbnail": "https://img.youtube.com/vi/fBqaA7zRO58/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "16.4: for...of loop - Topics of JavaScript/ES6",
+                            "videoId": "Y8sMnRQYr3c",
+                            "thumbnail": "https://img.youtube.com/vi/Y8sMnRQYr3c/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "7.4: Mouse Interaction with Objects - p5.js Tutorial",
+                            "videoId": "TaN5At5RWH8",
+                            "thumbnail": "https://img.youtube.com/vi/TaN5At5RWH8/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "7.5: Removing Objects from Arrays - p5.js Tutorial",
+                            "videoId": "tA_ZgruFF9k",
+                            "thumbnail": "https://img.youtube.com/vi/tA_ZgruFF9k/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "7.6: Object Communication Part 1 - p5.js Tutorial",
+                            "videoId": "W1-ej3Wu5zg",
+                            "thumbnail": "https://img.youtube.com/vi/W1-ej3Wu5zg/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "7.7: Object Communication Part 2 - p5.js Tutorial",
+                            "videoId": "5Q9cA0REztY",
+                            "thumbnail": "https://img.youtube.com/vi/5Q9cA0REztY/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "p5.js Web Editor: Uploading Media Files - p5.js Tutorial",
+                            "videoId": "rO6M5hj0V-o",
+                            "thumbnail": "https://img.youtube.com/vi/rO6M5hj0V-o/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "7.8: Objects and Images - p5.js Tutorial",
+                            "videoId": "i2C1hrJMwz0",
+                            "thumbnail": "https://img.youtube.com/vi/i2C1hrJMwz0/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        }
+                    ]
+                },
+                {
+                    "name": "Video Games!",
+                    "description": "Coding Challenges for various (classic and new) video games in Processing (Java) or JavaScript with p5.js.",
+                    "songs": [
+                        {
+                            "title": "Coding Challenge #3: The Snake Game",
+                            "videoId": "AaGK-fj-BAM",
+                            "thumbnail": "https://img.youtube.com/vi/AaGK-fj-BAM/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Coding Challenge #5: Space Invaders in JavaScript with p5.js",
+                            "videoId": "biN3v3ef-Y0",
+                            "thumbnail": "https://img.youtube.com/vi/biN3v3ef-Y0/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Coding Challenge #31: Flappy Bird",
+                            "videoId": "cXgA1d_E-jY",
+                            "thumbnail": "https://img.youtube.com/vi/cXgA1d_E-jY/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Coding Challenge #41: Clappy Bird!",
+                            "videoId": "aKiyCeIuwn4",
+                            "thumbnail": "https://img.youtube.com/vi/aKiyCeIuwn4/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Coding Challenge #32.1: Agar.io - Part 1 (Basic Game Mechanics)",
+                            "videoId": "JXuxYMGe4KI",
+                            "thumbnail": "https://img.youtube.com/vi/JXuxYMGe4KI/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Coding Challenge #32.2: Agar.io - Part 2 (Networking with Socket.IO and Node.js)",
+                            "videoId": "ZjVyKXp9hec",
+                            "thumbnail": "https://img.youtube.com/vi/ZjVyKXp9hec/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Coding Challenge #46.1: Asteroids with p5.js - Part 1",
+                            "videoId": "hacZU523FyM",
+                            "thumbnail": "https://img.youtube.com/vi/hacZU523FyM/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Coding Challenge #46.2: Asteroids with p5.js - Part 2",
+                            "videoId": "xTTuih7P0c0",
+                            "thumbnail": "https://img.youtube.com/vi/xTTuih7P0c0/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Coding Challenge #67: Pong!",
+                            "videoId": "IIrC5Qcb2G4",
+                            "thumbnail": "https://img.youtube.com/vi/IIrC5Qcb2G4/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Coding Challenge #71: Minesweeper",
+                            "videoId": "LFU5ZlrR21E",
+                            "thumbnail": "https://img.youtube.com/vi/LFU5ZlrR21E/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Coding Challenge #72: Frogger - Part 1",
+                            "videoId": "giXV6xErw0Y",
+                            "thumbnail": "https://img.youtube.com/vi/giXV6xErw0Y/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Coding Challenge #72: Frogger - Part 2",
+                            "videoId": "06-ZvYmSeus",
+                            "thumbnail": "https://img.youtube.com/vi/06-ZvYmSeus/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Coding Challenge #72: Frogger - Part 3",
+                            "videoId": "hk326ZHlENQ",
+                            "thumbnail": "https://img.youtube.com/vi/hk326ZHlENQ/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Coding Challenge #72: Frogger Refactoring",
+                            "videoId": "c6WdJltqEtM",
+                            "thumbnail": "https://img.youtube.com/vi/c6WdJltqEtM/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        },
+                        {
+                            "title": "Coding Challenge #147: Chrome Dinosaur Game (with Speech Commands machine learning model!)",
+                            "videoId": "l0HoJHc-63Q",
+                            "thumbnail": "https://img.youtube.com/vi/l0HoJHc-63Q/hqdefault.jpg",
+                            "artist": "The Coding Train"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Steves Makerspace",
+            "playlists": [
+                {
+                    "name": "How to Code Generative Art using p5js",
+                    "description": "How to Code Generative Art using p5.js",
+                    "songs": [
+                        {
+                            "title": "How to Code Generative Art: Preview to the Course - p5.js",
+                            "videoId": "ZiVWNAqLDwU",
+                            "thumbnail": "https://img.youtube.com/vi/ZiVWNAqLDwU/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "1: Getting Started with p5.js: How to Code Generative Art",
+                            "videoId": "6QFw_vWkFTI",
+                            "thumbnail": "https://img.youtube.com/vi/6QFw_vWkFTI/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "2: Color in p5.js: How to Code Generative Art",
+                            "videoId": "PSDUMZRYWRU",
+                            "thumbnail": "https://img.youtube.com/vi/PSDUMZRYWRU/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "3: Shapes plus Random function in p5.js: How to Code Generative Art",
+                            "videoId": "t8gNWb7jzc0",
+                            "thumbnail": "https://img.youtube.com/vi/t8gNWb7jzc0/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "4: Variables plus Math Shortcuts in p5.js: How to Code Generative Art",
+                            "videoId": "hmCGL76gNss",
+                            "thumbnail": "https://img.youtube.com/vi/hmCGL76gNss/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "5: For Loops and While Loops in p5.js: How to Code Generative Art",
+                            "videoId": "EyFnjrTBmPg",
+                            "thumbnail": "https://img.youtube.com/vi/EyFnjrTBmPg/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "6: If - Else plus AND, OR, and NOT in p5.js: How to Code Generative Art",
+                            "videoId": "1oMwEhNjIJc",
+                            "thumbnail": "https://img.youtube.com/vi/1oMwEhNjIJc/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "7: Custom Shapes - Vertex and curveVertex in p5.js: How to Code Generative Art",
+                            "videoId": "k49-ETawIMk",
+                            "thumbnail": "https://img.youtube.com/vi/k49-ETawIMk/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "8: Translate and Rotate in p5.js: How to Code Generative Art",
+                            "videoId": "H9PeFYqi-V0",
+                            "thumbnail": "https://img.youtube.com/vi/H9PeFYqi-V0/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "9: On Being a Generative Artist - How to Code Generative Art - p5.js",
+                            "videoId": "PJSFjKERPzQ",
+                            "thumbnail": "https://img.youtube.com/vi/PJSFjKERPzQ/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "10: Creating Functions in p5.js: How to Code Generative Art",
+                            "videoId": "sd6aKK6zqEg",
+                            "thumbnail": "https://img.youtube.com/vi/sd6aKK6zqEg/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "11: Using a Buffer Canvas - createGraphics, Get, Image, Tint in p5.js: How to Code Generative Art",
+                            "videoId": "dUOryBQR7B8",
+                            "thumbnail": "https://img.youtube.com/vi/dUOryBQR7B8/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "Using Erase Function in p5.js to Make Interesting Shapes",
+                            "videoId": "zDlfsdT7WG8",
+                            "thumbnail": "https://img.youtube.com/vi/zDlfsdT7WG8/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "13: Basics of Arrays in p5.js: How to Code Generative Art",
+                            "videoId": "sd3ZvSHfxrM",
+                            "thumbnail": "https://img.youtube.com/vi/sd3ZvSHfxrM/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "14: Array Examples from Steve's Projects in p5.js: How to Code Generative Art",
+                            "videoId": "IzryhQ3Qiws",
+                            "thumbnail": "https://img.youtube.com/vi/IzryhQ3Qiws/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "15: Sine and Cosine to make wonky circles and meandering lines in p5.js: How to Code Generative Art",
+                            "videoId": "rI_CqFaJAL4",
+                            "thumbnail": "https://img.youtube.com/vi/rI_CqFaJAL4/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "16: Introduction to Perlin Noise in p5.js: How to Code Generative Art",
+                            "videoId": "9LmeyvbforA",
+                            "thumbnail": "https://img.youtube.com/vi/9LmeyvbforA/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "17: Perlin Noise Grid Project in p5.js: How to Code Generative Art",
+                            "videoId": "CF_pMOaNJaM",
+                            "thumbnail": "https://img.youtube.com/vi/CF_pMOaNJaM/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "18: Perlin Noise Flow Fields in p5.js: How to Code Generative Art",
+                            "videoId": "To3dtYEQaf4",
+                            "thumbnail": "https://img.youtube.com/vi/To3dtYEQaf4/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "19: Clipping Function in p5.js: How to Code Generative Art",
+                            "videoId": "4deLgXtzqoQ",
+                            "thumbnail": "https://img.youtube.com/vi/4deLgXtzqoQ/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "20: Intro to WEBGL-3D Graphics in p5.js: How to Code Generative Art",
+                            "videoId": "HJ7D0ysUL74",
+                            "thumbnail": "https://img.youtube.com/vi/HJ7D0ysUL74/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "21: Return, Break \\u0026 Continue in p5.js: How to Code Generative Art",
+                            "videoId": "oYhV2zruaUg",
+                            "thumbnail": "https://img.youtube.com/vi/oYhV2zruaUg/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "22: Deeper Dive into Color in p5.js: How to Code Generative Art",
+                            "videoId": "rrmS_Ciopt0",
+                            "thumbnail": "https://img.youtube.com/vi/rrmS_Ciopt0/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "23: More Useful Functions in p5.js: How to Code Generative Art",
+                            "videoId": "lNxMKPGSpBQ",
+                            "thumbnail": "https://img.youtube.com/vi/lNxMKPGSpBQ/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        },
+                        {
+                            "title": "24: Where to go from here; the creative process; big list of resources: How to Code Generative Art",
+                            "videoId": "xdg7uWljj8Q",
+                            "thumbnail": "https://img.youtube.com/vi/xdg7uWljj8Q/hqdefault.jpg",
+                            "artist": "Steve's Makerspace"
+                        }
+                    ]
+                },
+                {
+                    "name": "playlist-4",
+                    "description": "description of playlist-4",
+                    "songs": []
+                }
+            ]
+        }
+    ]
+}
