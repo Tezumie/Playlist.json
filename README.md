@@ -38,6 +38,15 @@ fetch('https://raw.githubusercontent.com/username/repo/branch/playlists/music.js
   })
   .catch(error => console.error('Error fetching playlist data:', error));
 ```
+### Creating JSON from a YouTube Playlist
+
+Use the [Playlist JSON Extractor](https://tezumie.github.io/Playlist.json/tools/json-extractor.html) to generate your JSON data.
+
+1. Open the YouTube playlist page.
+2. Right-click and select "View Page Source" (`Ctrl+U` or `Cmd+U`).
+3. Copy all the HTML code and paste it into the extractor tool.
+4. Click "Extract Playlist Data" and then "Copy Extracted Data."
+5. Add your playlist to the example format found in `playlists/playlist.json`.
 
 ### Using the Playlist.json Application with Your Data
 
@@ -54,14 +63,15 @@ Alternatively, you can use the Playlist.json application to display your playlis
 #### Examples:
 
 ```js
-https://yourwebsite.com?playlist=music
+https://tezumie.github.io/Playlist.json?playlist=p5-Tutorials
 ```
-Loads `playlists/music.json`.
+Loads `https://tezumie.github.io/Playlist.json/?playlist=p5-Tutorials.json`.
 
 ```js
-https://yourwebsite.com?gitlist=username/repo/branch/playlist
+https://tezumie.github.io/Playlist.json?gitlist=username/repo/branch/playlist/music.json
 ```
-Loads `https://raw.githubusercontent.com/username/repo/branch/playlist.json`.
+Loads `https://tezumie.github.io/Playlist.json?gitlist=Tezumie/Playlist.json/refs/heads/main/playlists/music.json`.
+
 
 ![p5-tutorial](images/example.PNG)
 
