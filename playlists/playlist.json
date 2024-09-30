@@ -1,0 +1,34 @@
+{
+  "categories": [
+    {
+      "name": "category-1",
+      "playlists": [
+        {
+          "name": "playlist-1",
+          "description": "description of playlist-1",
+          "songs": []
+        },
+        {
+          "name": "playlist-2",
+          "description": "description of playlist-2",
+          "songs": []
+        }
+      ]
+    },
+    {
+      "name": "category-2",
+      "playlists": [
+        {
+          "name": "playlist-3",
+          "description": "description of playlist-3",
+          "songs": []
+        },
+        {
+          "name": "playlist-4",
+          "description": "description of playlist-4",
+          "songs": []
+        }
+      ]
+    }
+  ]
+}
