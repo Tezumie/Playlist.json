@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Playlist.json</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" />
   <style>
     :root {
       --color-background: #ffffff;
@@ -230,9 +230,9 @@
       /* background-color: var(--color-primary); */
       /* color: var(--color-accent-hover); */
       /* border-radius: 50%;
-      padding: 2px;
-      width: 20px;
-      height: 20px; */
+                              padding: 2px;
+                              width: 20px;
+                              height: 20px; */
     }
 
     .main-content {
@@ -1021,9 +1021,11 @@
       align-items: center;
       backdrop-filter: blur(2px);
       -webkit-backdrop-filter: blur(2px);
+      background-color: var(--color-secondary);
+      color: var(--color-text);
       border-radius: 11px;
       margin-right: 10px;
-      width: 380px
+      width: 385px
     }
 
     /* Equalizer Styles */
@@ -1034,14 +1036,14 @@
     }
 
     /* #equalizer::before {
-      content: "\f51f";
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 900;
-      margin-right: 8px;
-      font-size: 21px;
-      border-radius: 50%;
-      padding: 2px;
-    } */
+            content: "\f51f";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            margin-right: 8px;
+            font-size: 21px;
+            border-radius: 50%;
+            padding: 2px;
+          } */
 
     .bar {
       border-radius: 30px;
@@ -1101,10 +1103,75 @@
     #theme-toggle:hover {
       color: var(--color-accent-hover);
     }
+
+    .backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-background);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1005;
+    }
+
+    .bar-loading {
+      width: 12px;
+      /* Width of each bar */
+      height: 60px;
+      /* Initial height of each bar */
+      background: linear-gradient(180deg, var(--color-background), var(--color-accent-hover), var(--color-accent), var(--color-accent), var(--color-accent));
+      /* Color gradient */
+      margin: 0 4px;
+      animation: smooth-bar-loading 1.2s ease-in-out infinite;
+      animation-delay: var(--delay);
+      transform-origin: bottom center;
+      /* Animate from the bottom */
+      border-radius: 6px;
+      /* Smooth rounded corners */
+      transform: scaleY(0.3);
+    }
+
+    /* Updated Animation Keyframes */
+    @keyframes smooth-bar-loading {
+      0% {
+        transform: scaleY(0.3);
+        /* Minimum height */
+      }
+
+      10% {
+        transform: scaleY(0.4);
+        /* Small increase to reduce the initial snap */
+      }
+
+      50% {
+        transform: scaleY(1);
+        /* Maximum height */
+      }
+
+      90% {
+        transform: scaleY(0.4);
+        /* Smoothly return */
+      }
+
+      100% {
+        transform: scaleY(0.3);
+        /* Back to the original minimum height */
+      }
+    }
   </style>
 </head>
 
 <body>
+  <div class="backdrop">
+    <div class="bar-loading" style="--delay: 0s;"></div>
+    <div class="bar-loading" style="--delay: 0.1s;"></div>
+    <div class="bar-loading" style="--delay: 0.2s;"></div>
+    <div class="bar-loading" style="--delay: 0.3s;"></div>
+    <div class="bar-loading" style="--delay: 0.4s;"></div>
+  </div>
   <div class="logo">
     <div id="equalizer">
       <div class="bar" style="--delay: 0s;"></div>
@@ -1115,7 +1182,6 @@
     </div>
   </div>
 
-
   <div class="sidebar">
     <ul id="playlist-list">
       <li><a id="explore-link" onclick="loadHome()">Explore</a></li>
@@ -1125,7 +1191,7 @@
   <div class="search-container">
     <div class="search-wrapper">
       <input type="text" id="search-bar" class="search-bar" placeholder="Search Users, playlists, or videos..."
-                oninput="searchPlaylists()">
+                oninput="searchPlaylists()" />
       <button id="clear-btn" class="clear-btn" onclick="clearSearch()">✕</button>
       <div class="search-results" id="search-results"></div>
     </div>
@@ -1145,14 +1211,14 @@
     <!-- Seek bar container -->
     <div class="seek-bar-container">
       <span id="current-time">0:00</span>
-      <input type="range" id="time-slider" min="0" max="100" value="0" step="1" onchange="seekVideo()">
+      <input type="range" id="time-slider" min="0" max="100" value="0" step="1" onchange="seekVideo()" />
       <span id="total-time">0:00</span>
     </div>
 
     <!-- Controls container -->
     <div class="controls-container">
       <div class="current-song">
-        <img id="song-cover" src="https://via.placeholder.com/50" alt="Cover" onclick="toggleVideoPopup()">
+        <img id="song-cover" src="https://via.placeholder.com/50" alt="Cover" onclick="toggleVideoPopup()" />
         <div>
           <strong id="song-title">Song Title</strong>
           <p id="song-artist">Artist Name</p>
@@ -1164,23 +1230,30 @@
         <div class="controls-notice" id="controls-notice">
           Click the video to enable controls.
         </div>
-        <button id="expand-btn" aria-label="Expand Video"><i class="fas fa-expand"
-                        aria-hidden="true"></i></button>
-        <button id="shuffle-btn" aria-label="Shuffle"><i class="fas fa-random" aria-hidden="true"></i></button>
-        <button id="previous-btn" aria-label="Previous Song"><i class="fas fa-step-backward"
-                        aria-hidden="true"></i></button>
-        <button id="play-pause-btn" onclick="togglePlayPause()" aria-label="Play/Pause"><i class="fas fa-play"
-                        aria-hidden="true"></i></button>
-        <button id="next-btn" aria-label="Next Song"><i class="fas fa-step-forward"
-                        aria-hidden="true"></i></button>
+        <button id="expand-btn" aria-label="Expand Video">
+                    <i class="fas fa-expand" aria-hidden="true"></i>
+                </button>
+        <button id="shuffle-btn" aria-label="Shuffle">
+                    <i class="fas fa-random" aria-hidden="true"></i>
+                </button>
+        <button id="previous-btn" aria-label="Previous Song">
+                    <i class="fas fa-step-backward" aria-hidden="true"></i>
+                </button>
+        <button id="play-pause-btn" onclick="togglePlayPause()" aria-label="Play/Pause">
+                    <i class="fas fa-play" aria-hidden="true"></i>
+                </button>
+        <button id="next-btn" aria-label="Next Song">
+                    <i class="fas fa-step-forward" aria-hidden="true"></i>
+                </button>
 
         <!-- Volume Control -->
         <div class="volume-control">
-          <button id="volume-btn" aria-label="Volume"><i class="fas fa-volume-up"
-                            aria-hidden="true"></i></button>
+          <button id="volume-btn" aria-label="Volume">
+                        <i class="fas fa-volume-up" aria-hidden="true"></i>
+                    </button>
           <div id="volume-slider-container">
             <div class="volume-slider-wrapper">
-              <input type="range" id="volume-slider" min="0" max="100" value="100" step="1">
+              <input type="range" id="volume-slider" min="0" max="100" value="100" step="1" />
             </div>
           </div>
         </div>
@@ -1189,8 +1262,9 @@
         <div id="video-popup" class="video-popup" style="display: none;">
           <div id="popup-video-container"></div>
           <button id="close-popup" onclick="closeVideoPopup()" aria-label="Close Popup">X</button>
-          <button id="full-popup" aria-label="Toggle Fullscreen"><i class="fa-solid fa-maximize"
-                            aria-hidden="true"></i></button>
+          <button id="full-popup" aria-label="Toggle Fullscreen">
+                        <i class="fa-solid fa-maximize" aria-hidden="true"></i>
+                    </button>
         </div>
       </div>
     </div>
@@ -1200,327 +1274,366 @@
   <div id="error-message" style="display: none; color: red;"></div>
 
   <!-- Slider Tooltip -->
-  <span id="slider-tooltip"
-        style="display:none; position:absolute; padding:4px 6px; border-radius:4px; font-size:13px; pointer-events:none;"></span>
+  <span id="slider-tooltip" style="
+                display: none;
+                position: absolute;
+                padding: 4px 6px;
+                border-radius: 4px;
+                font-size: 13px;
+                pointer-events: none;
+            "></span>
 
   <!-- Include YouTube IFrame API -->
   <script src="https://www.youtube.com/iframe_api"></script>
 
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener("DOMContentLoaded", () => {
             // Global variables
-            let currentPlaylist = [];
-            let currentSongIndex = 0;
-            let player;
-            let isPlaying = false;
-            let videoPopupVisible = false;
-            let allSongs = [];
-            let isPlayerReady = false;
-            let playQueue = [];
-            let isInitialized = false; // Tracks if the player has been initialized by user interaction
-            let currentlyPlayingSong = null; // Stores the currently playing song object
-            let volumeIntervalId;
-            let progressIntervalId;
+            let currentPlaylist = []
+            let currentSongIndex = 0
+            let player
+            let isPlaying = false
+            let videoPopupVisible = false
+            let allSongs = []
+            let isPlayerReady = false
+            let playQueue = []
+            let isInitialized = false // Tracks if the player has been initialized by user interaction
+            let currentlyPlayingSong = null // Stores the currently playing song object
+            let volumeIntervalId
+            let progressIntervalId
 
             // Reference to the controls notice
-            let controlsNotice = document.getElementById('controls-notice');
+            let controlsNotice = document.getElementById("controls-notice")
 
             // Event listeners
-            document.getElementById('full-popup').addEventListener('click', () => {
-                const videoPopup = document.getElementById('video-popup');
-                const fullPopupButton = document.getElementById('full-popup');
+            document.getElementById("full-popup").addEventListener("click", () => {
+                const videoPopup = document.getElementById("video-popup")
+                const fullPopupButton = document.getElementById("full-popup")
 
                 // Toggle fullscreen class
-                videoPopup.classList.toggle('fullscreen');
+                videoPopup.classList.toggle("fullscreen")
 
                 // Change the button icon based on the fullscreen state
-                if (videoPopup.classList.contains('fullscreen')) {
-                    fullPopupButton.innerHTML = '<i class="fa-solid fa-minimize"></i>'; // Change to minimize icon
+                if (videoPopup.classList.contains("fullscreen")) {
+                    fullPopupButton.innerHTML = '<i class="fa-solid fa-minimize"></i>' // Change to minimize icon
                 } else {
-                    fullPopupButton.innerHTML = '<i class="fa-solid fa-maximize"></i>'; // Change back to maximize icon
+                    fullPopupButton.innerHTML = '<i class="fa-solid fa-maximize"></i>' // Change back to maximize icon
                 }
-            });
+            })
 
             // Volume Control Elements
-            const volumeBtn = document.getElementById('volume-btn');
-            const volumeSliderContainer = document.getElementById('volume-slider-container');
-            const volumeSlider = document.getElementById('volume-slider');
+            const volumeBtn = document.getElementById("volume-btn")
+            const volumeSliderContainer = document.getElementById("volume-slider-container")
+            const volumeSlider = document.getElementById("volume-slider")
 
             // Toggle the volume slider visibility when the volume button is clicked
-            volumeBtn.addEventListener('click', (event) => {
-                event.stopPropagation(); // Prevent the event from bubbling up
-                const isVisible = volumeSliderContainer.style.display === 'block';
-                volumeSliderContainer.style.display = isVisible ? 'none' : 'block';
-            });
+            volumeBtn.addEventListener("click", (event) => {
+                event.stopPropagation() // Prevent the event from bubbling up
+                const isVisible = volumeSliderContainer.style.display === "block"
+                volumeSliderContainer.style.display = isVisible ? "none" : "block"
+            })
 
             // Hide the volume slider when clicking outside
-            document.addEventListener('click', (event) => {
+            document.addEventListener("click", (event) => {
                 if (!volumeSliderContainer.contains(event.target) && !volumeBtn.contains(event.target)) {
-                    volumeSliderContainer.style.display = 'none';
+                    volumeSliderContainer.style.display = "none"
                 }
-            });
+            })
 
             // Update the player's volume when the slider value changes
-            volumeSlider.addEventListener('input', (event) => {
-                const volume = event.target.value;
-                if (player && typeof player.setVolume === 'function') {
-                    player.setVolume(volume); // YouTube API expects volume in percentage (0-100)
+            volumeSlider.addEventListener("input", (event) => {
+                const volume = event.target.value
+                if (player && typeof player.setVolume === "function") {
+                    player.setVolume(volume) // YouTube API expects volume in percentage (0-100)
                 }
                 if (isPlaying) {
-                    startEqualizer();
+                    startEqualizer()
                 }
                 // Update the volume icon based on the volume level
                 if (volume == 0) {
-                    volumeBtn.querySelector('i').className = 'fas fa-volume-mute';
+                    volumeBtn.querySelector("i").className = "fas fa-volume-mute"
                 } else if (volume < 50) {
-                    volumeBtn.querySelector('i').className = 'fas fa-volume-down';
+                    volumeBtn.querySelector("i").className = "fas fa-volume-down"
                 } else {
-                    volumeBtn.querySelector('i').className = 'fas fa-volume-up';
+                    volumeBtn.querySelector("i").className = "fas fa-volume-up"
                 }
-            });
+            })
+
+            let isYouTubeAPIReady = false
 
             // Make sure onYouTubeIframeAPIReady is globally accessible
             window.onYouTubeIframeAPIReady = function () {
-                console.log("YouTube IFrame API Ready");
-
-                player = new YT.Player('popup-video-container', {
-                    height: '100%',
-                    width: '100%',
-                    videoId: '', // Keep empty; load videos dynamically
+                player = new YT.Player("popup-video-container", {
+                    height: "100%",
+                    width: "100%",
+                    videoId: "", // Keep empty; load videos dynamically
                     playerVars: {
-                        'controls': 1, // Enable controls so user can click play
-                        'rel': 0
+                        controls: 1, // Enable controls so user can click play
+                        rel: 0,
                     },
                     events: {
-                        'onStateChange': onPlayerStateChange,
-                        'onReady': onPlayerReady,
-                        'onError': onPlayerError
-                    }
-                });
-            };
+                        onStateChange: onPlayerStateChange,
+                        onReady: onPlayerReady,
+                        onError: onPlayerError,
+                    },
+                })
+                isYouTubeAPIReady = true
+                let backdrop = document.querySelector(".backdrop")
+                setTimeout(function () {
+                    backdrop.style.transition = "all 1s ease-in-out"
+                    backdrop.style.transform = "translateY(250vh)" // Move off-screen downwards
+                    backdrop.style.borderRadius = "80%"
+                }, 2000) // 1000 milliseconds (1 second) timeout
+            }
+
+            //Chromium browsers cache youtube API preventing onYouTubeIframeAPIReady event.
+            setTimeout(() => {
+                if (isYouTubeAPIReady) {
+                    console.log("YouTube IFrame API Ready")
+                } else {
+                    console.log("API NOT READY, Re-initializing...")
+                    player = new YT.Player("popup-video-container", {
+                        height: "100%",
+                        width: "100%",
+                        videoId: "", // Keep empty; load videos dynamically
+                        playerVars: {
+                            controls: 1, // Enable controls so user can click play
+                            rel: 0,
+                        },
+                        events: {
+                            onStateChange: onPlayerStateChange,
+                            onReady: onPlayerReady,
+                            onError: onPlayerError,
+                        },
+                    })
+                    let backdrop = document.querySelector(".backdrop")
+                    setTimeout(function () {
+                        backdrop.style.transition = "all 1s ease-in-out"
+                        backdrop.style.transform = "translateY(250vh)" // Move off-screen downwards
+                        backdrop.style.borderRadius = "80%"
+                    }, 2000) // 1000 milliseconds (1 second) timeout
+                }
+            }, "3000")
 
             function onPlayerReady(event) {
-                isPlayerReady = true;
+                isPlayerReady = true
 
                 // Start intervals
-                updateProgress();
-                updateCustomVolume();
+                updateProgress()
+                updateCustomVolume()
 
-                player.setVolume(100);
-                volumeSlider.value = 100;
+                player.setVolume(100)
+                volumeSlider.value = 100
 
                 // Display the first song's information without playing it
                 if (currentPlaylist.length > 0) {
-                    const song = currentPlaylist[0];
-                    document.getElementById("song-title").textContent = song.title;
-                    document.getElementById("song-artist").textContent = song.artist || 'Unknown Artist';
-                    document.getElementById("song-cover").src = song.thumbnail;
+                    const song = currentPlaylist[0]
+                    document.getElementById("song-title").textContent = song.title
+                    document.getElementById("song-artist").textContent = song.artist || "Unknown Artist"
+                    document.getElementById("song-cover").src = song.thumbnail
 
                     // Cue the first song but do not play it
-                    player.cueVideoById(song.videoId);
-                    currentSongIndex = 0;
+                    player.cueVideoById(song.videoId)
+                    currentSongIndex = 0
 
                     // **Set currentlyPlayingSong to the first song**
-                    currentlyPlayingSong = song;
+                    currentlyPlayingSong = song
                 }
 
                 // Show the video popup to initialize the player
-                videoPopupVisible = true;
-                document.getElementById('video-popup').style.display = 'block';
+                videoPopupVisible = true
+                document.getElementById("video-popup").style.display = "block"
 
                 // Disable the controls until the user clicks play on the video
-                disableControls();
+                disableControls()
 
                 // Show the controls notice
-                controlsNotice.style.display = 'block';
+                controlsNotice.style.display = "block"
 
                 // Process any queued play requests
                 while (playQueue.length > 0) {
-                    const func = playQueue.shift();
-                    func();
+                    const func = playQueue.shift()
+                    func()
                 }
             }
 
             function updateCustomVolume() {
-                clearInterval(volumeIntervalId); // Clear any existing interval
+                clearInterval(volumeIntervalId) // Clear any existing interval
                 volumeIntervalId = setInterval(() => {
-                    if (player && typeof player.getVolume === 'function') {
-                        const currentVolume = player.getVolume();
-                        volumeSlider.value = currentVolume;
+                    if (player && typeof player.getVolume === "function") {
+                        const currentVolume = player.getVolume()
+                        volumeSlider.value = currentVolume
 
                         // Update the volume icon based on the volume level
                         if (currentVolume == 0) {
-                            volumeBtn.querySelector('i').className = 'fas fa-volume-mute';
+                            volumeBtn.querySelector("i").className = "fas fa-volume-mute"
                         } else if (currentVolume < 50) {
-                            volumeBtn.querySelector('i').className = 'fas fa-volume-down';
+                            volumeBtn.querySelector("i").className = "fas fa-volume-down"
                         } else {
-                            volumeBtn.querySelector('i').className = 'fas fa-volume-up';
+                            volumeBtn.querySelector("i").className = "fas fa-volume-up"
                         }
                     }
-                }, 500);
+                }, 500)
             }
 
             function updateProgress() {
-                clearInterval(progressIntervalId); // Clear any existing interval
+                clearInterval(progressIntervalId) // Clear any existing interval
                 progressIntervalId = setInterval(() => {
                     if (player && player.getDuration) {
-                        const duration = player.getDuration();
-                        const currentTime = player.getCurrentTime();
-                        document.getElementById('time-slider').max = duration;
-                        document.getElementById('time-slider').value = currentTime;
-                        document.getElementById('current-time').textContent = formatTime(currentTime);
-                        document.getElementById('total-time').textContent = formatTime(duration);
+                        const duration = player.getDuration()
+                        const currentTime = player.getCurrentTime()
+                        document.getElementById("time-slider").max = duration
+                        document.getElementById("time-slider").value = currentTime
+                        document.getElementById("current-time").textContent = formatTime(currentTime)
+                        document.getElementById("total-time").textContent = formatTime(duration)
                     }
-                }, 1000);
+                }, 1000)
             }
 
             function onPlayerStateChange(event) {
-                isPlaying = event.data == YT.PlayerState.PLAYING;
+                isPlaying = event.data == YT.PlayerState.PLAYING
 
                 // Update the play/pause icon based on the current state
-                const playPauseButton = document.getElementById('play-pause-btn').querySelector('i');
+                const playPauseButton = document.getElementById("play-pause-btn").querySelector("i")
                 if (isPlaying) {
-                    playPauseButton.classList.remove('fa-play');
-                    playPauseButton.classList.add('fa-pause');
+                    playPauseButton.classList.remove("fa-play")
+                    playPauseButton.classList.add("fa-pause")
 
                     // If this is the first time playing, enable the controls
                     if (!isInitialized) {
-                        isInitialized = true;
-                        enableControls();
+                        isInitialized = true
+                        enableControls()
                         // Hide the controls notice
-                        controlsNotice.style.display = 'none';
+                        controlsNotice.style.display = "none"
                     }
 
                     // Start intervals
-                    startEqualizer();
-                    updateProgress();
-                    updateCustomVolume();
+                    startEqualizer()
+                    updateProgress()
+                    updateCustomVolume()
                 } else {
-                    playPauseButton.classList.remove('fa-pause');
-                    playPauseButton.classList.add('fa-play');
+                    playPauseButton.classList.remove("fa-pause")
+                    playPauseButton.classList.add("fa-play")
 
                     // Clear intervals
-                    stopEqualizer();
-                    clearInterval(progressIntervalId);
-                    clearInterval(volumeIntervalId);
+                    stopEqualizer()
+                    clearInterval(progressIntervalId)
+                    clearInterval(volumeIntervalId)
                 }
 
                 if (event.data == YT.PlayerState.ENDED) {
-                    playNextSong(); // Auto-play the next song when the current one ends
+                    playNextSong() // Auto-play the next song when the current one ends
                 }
             }
 
             function onPlayerError(event) {
-                console.error("YouTube Player Error:", event.data);
-                const errorMessage = document.getElementById('error-message');
-                errorMessage.textContent = "An error occurred while loading the video.";
-                errorMessage.style.display = 'block';
+                console.error("YouTube Player Error:", event.data)
+                const errorMessage = document.getElementById("error-message")
+                errorMessage.textContent = "An error occurred while loading the video."
+                errorMessage.style.display = "block"
             }
 
             function disableControls() {
-                const controls = document.querySelectorAll('.controls button');
-                controls.forEach(button => {
-                    button.disabled = true;
-                });
+                const controls = document.querySelectorAll(".controls button")
+                controls.forEach((button) => {
+                    button.disabled = true
+                })
             }
 
             function enableControls() {
-                const controls = document.querySelectorAll('.controls button');
-                controls.forEach(button => {
-                    button.disabled = false;
-                });
+                const controls = document.querySelectorAll(".controls button")
+                controls.forEach((button) => {
+                    button.disabled = false
+                })
             }
 
-
-            let equalizerAnimationFrameId;
-            let isEqualizerInitialized = false; // Track whether the equalizer has been initialized
+            let equalizerAnimationFrameId
+            let isEqualizerInitialized = false // Track whether the equalizer has been initialized
 
             // Function to initialize the equalizer with the current volume level
             function initializeEqualizer() {
-                const bars = document.querySelectorAll('.bar');
-                if (!bars) return;
+                const bars = document.querySelectorAll(".bar")
+                if (!bars) return
 
-                const volume = player && typeof player.getVolume === 'function' ? player.getVolume() : 50;
-                const volumeFactor = volume / 100;
+                const volume = player && typeof player.getVolume === "function" ? player.getVolume() : 50
+                const volumeFactor = volume / 100
 
                 // Set initial height of the bars based on volume
                 bars.forEach((bar) => {
-                    const baseScale = 0.4 + 0.6 * volumeFactor; // Base height between 0.4 and 1 based on volume
-                    bar.style.transform = `scaleY(${baseScale})`;
-                });
-                isEqualizerInitialized = true;
+                    const baseScale = 0.4 + 0.6 * volumeFactor // Base height between 0.4 and 1 based on volume
+                    bar.style.transform = `scaleY(${baseScale})`
+                })
+                isEqualizerInitialized = true
             }
 
             // Start the equalizer animation based on the current volume and time-based sine wave pattern
             function startEqualizer() {
-                const bars = document.querySelectorAll('.bar');
-                if (!bars || !isPlayerReady) return; // Skip if no bars or player is not ready
+                const bars = document.querySelectorAll(".bar")
+                if (!bars || !isPlayerReady) return // Skip if no bars or player is not ready
 
                 if (!isEqualizerInitialized) {
-                    initializeEqualizer(); // Set initial state of bars if not already done
+                    initializeEqualizer() // Set initial state of bars if not already done
                 }
 
-                const barCount = bars.length;
-                const barPhases = Array.from({ length: barCount }, (_, i) => (Math.PI * 2 * i) / barCount);
-                const barSpeeds = Array.from({ length: barCount }, () => Math.random() * 0.002 + 0.001);
+                const barCount = bars.length
+                const barPhases = Array.from({ length: barCount }, (_, i) => (Math.PI * 2 * i) / barCount)
+                const barSpeeds = Array.from({ length: barCount }, () => Math.random() * 0.002 + 0.001)
 
-                let startTime = null;
+                let startTime = null
 
                 function animateEqualizer(timestamp) {
-                    if (!startTime) startTime = timestamp;
-                    const elapsed = timestamp - startTime;
+                    if (!startTime) startTime = timestamp
+                    const elapsed = timestamp - startTime
 
-                    const volume = player && typeof player.getVolume === 'function' ? player.getVolume() : 50;
-                    const volumeFactor = volume / 100;
+                    const volume = player && typeof player.getVolume === "function" ? player.getVolume() : 50
+                    const volumeFactor = volume / 100
 
                     bars.forEach((bar, index) => {
-                        const speed = barSpeeds[index];
-                        const phase = barPhases[index];
-                        const sinValue = Math.sin((elapsed * speed * Math.PI * 2) + phase);
-                        const scale = (sinValue + 1) / 2; // Normalize sine wave to 0-1
+                        const speed = barSpeeds[index]
+                        const phase = barPhases[index]
+                        const sinValue = Math.sin(elapsed * speed * Math.PI * 2 + phase)
+                        const scale = (sinValue + 1) / 2 // Normalize sine wave to 0-1
 
-                        const minScale = 0.2; // Minimum scale for the bar
-                        const maxScale = 1.5; // Maximum scale for the bar
-                        const finalScale = minScale + (maxScale - minScale) * scale * volumeFactor;
-                        bar.style.transform = `scaleY(${finalScale})`;
-                    });
+                        const minScale = 0.2 // Minimum scale for the bar
+                        const maxScale = 1.5 // Maximum scale for the bar
+                        const finalScale = minScale + (maxScale - minScale) * scale * volumeFactor
+                        bar.style.transform = `scaleY(${finalScale})`
+                    })
 
-                    equalizerAnimationFrameId = requestAnimationFrame(animateEqualizer);
+                    equalizerAnimationFrameId = requestAnimationFrame(animateEqualizer)
                 }
 
-                equalizerAnimationFrameId = requestAnimationFrame(animateEqualizer);
+                equalizerAnimationFrameId = requestAnimationFrame(animateEqualizer)
             }
 
             // Stop the equalizer animation and set bars to reflect the current volume level
             function stopEqualizer() {
                 if (equalizerAnimationFrameId) {
-                    cancelAnimationFrame(equalizerAnimationFrameId);
-                    equalizerAnimationFrameId = null;
+                    cancelAnimationFrame(equalizerAnimationFrameId)
+                    equalizerAnimationFrameId = null
                 }
-                const bars = document.querySelectorAll('.bar');
+                const bars = document.querySelectorAll(".bar")
                 if (bars) {
-                    const volume = player && typeof player.getVolume === 'function' ? player.getVolume() : 50;
-                    const volumeFactor = volume / 100;
-                    const baseScale = 0.4 + 0.6 * volumeFactor; // Base height between 0.4 and 1 based on volume
+                    const volume = player && typeof player.getVolume === "function" ? player.getVolume() : 50
+                    const volumeFactor = volume / 100
+                    const baseScale = 0.4 + 0.6 * volumeFactor // Base height between 0.4 and 1 based on volume
 
                     // Reset bars to a static height based on volume
-                    bars.forEach(bar => bar.style.transform = `scaleY(${baseScale})`);
+                    bars.forEach((bar) => (bar.style.transform = `scaleY(${baseScale})`))
                 }
             }
 
-
-
             function toggleVideoPopup() {
-                const videoPopup = document.getElementById('video-popup');
-                videoPopupVisible = !videoPopupVisible;
-                videoPopup.style.display = videoPopupVisible ? 'block' : 'none';
+                const videoPopup = document.getElementById("video-popup")
+                videoPopupVisible = !videoPopupVisible
+                videoPopup.style.display = videoPopupVisible ? "block" : "none"
 
                 if (videoPopupVisible) {
                     if (currentlyPlayingSong) {
-                        const currentVideoData = player.getVideoData();
+                        const currentVideoData = player.getVideoData()
                         if (currentVideoData && currentVideoData.video_id !== currentlyPlayingSong.videoId) {
                             // **Load the currentlyPlayingSong only if it's not already loaded**
-                            player.cueVideoById(currentlyPlayingSong.videoId);
+                            player.cueVideoById(currentlyPlayingSong.videoId)
                         }
                         // **Do nothing if the correct video is already loaded**
                     } else {
@@ -1531,114 +1644,113 @@
             }
 
             function closeVideoPopup() {
-                videoPopupVisible = false;
-                document.getElementById('video-popup').style.display = 'none';
+                videoPopupVisible = false
+                document.getElementById("video-popup").style.display = "none"
             }
 
             function loadHome() {
                 // Flatten all songs into a single array
                 const allSongsArray = playlists.categories.reduce((acc, category) => {
-                    category.playlists.forEach(playlist => {
-                        playlist.songs.forEach(song => acc.push(song));
-                    });
-                    return acc;
-                }, []);
+                    category.playlists.forEach((playlist) => {
+                        playlist.songs.forEach((song) => acc.push(song))
+                    })
+                    return acc
+                }, [])
 
-                currentPlaylist = allSongsArray.sort(() => 0.5 - Math.random()).slice(0, 100);
-                document.getElementById("playlist-title").textContent = "Explore";
-                renderMusicCards(currentPlaylist);
-                setActiveLink('#explore-link');
+                currentPlaylist = allSongsArray.sort(() => 0.5 - Math.random()).slice(0, 100)
+                document.getElementById("playlist-title").textContent = "Explore"
+                renderMusicCards(currentPlaylist)
+                setActiveLink("#explore-link")
 
-                const contentContainer = document.querySelector('.main-content');
+                const contentContainer = document.querySelector(".main-content")
                 if (contentContainer) {
-                    contentContainer.scrollTo({ top: 0, behavior: 'smooth' });
+                    contentContainer.scrollTo({ top: 0, behavior: "smooth" })
                 } else {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    window.scrollTo({ top: 0, behavior: "smooth" })
                 }
             }
 
-
             function setActiveLink(selector) {
                 // Remove active class from all links
-                const allLinks = document.querySelectorAll('#playlist-list a');
-                allLinks.forEach(link => link.classList.remove('active'));
+                const allLinks = document.querySelectorAll("#playlist-list a")
+                allLinks.forEach((link) => link.classList.remove("active"))
 
                 // Add active class to the selected link
-                const activeLink = document.querySelector(selector);
+                const activeLink = document.querySelector(selector)
                 if (activeLink) {
-                    activeLink.classList.add('active');
+                    activeLink.classList.add("active")
                 }
             }
 
             function renderMusicCards(data) {
-                const container = document.getElementById("discover-section");
-                container.innerHTML = '';
+                const container = document.getElementById("discover-section")
+                container.innerHTML = ""
                 data.forEach((song, index) => {
-                    const card = document.createElement("div");
-                    card.className = "music-card";
+                    const card = document.createElement("div")
+                    card.className = "music-card"
                     card.innerHTML = `
         <img class ="music-img" src="${song.thumbnail}" alt="${song.title}">
         <div class="info">
           <span>${song.title}</span>
-          <small>${song.artist || 'Unknown Artist'}</small>
-        </div>`;
-                    card.onclick = () => playSong(index);
-                    container.appendChild(card);
-                });
+          <small>${song.artist || "Unknown Artist"}</small>
+        </div>`
+                    card.onclick = () => playSong(index)
+                    container.appendChild(card)
+                })
             }
 
             function playSong(index) {
-                const song = currentPlaylist[index];
+                const song = currentPlaylist[index]
 
                 if (!player) {
-                    console.error("Player is undefined! Queueing the play request.");
-                    playQueue.push(() => playSong(index));
-                    return;
+                    console.error("Player is undefined! Queueing the play request.")
+                    playQueue.push(() => playSong(index))
+                    return
                 }
                 if (!isPlayerReady) {
-                    console.warn("Player is not ready yet! Queueing the play request.");
-                    playQueue.push(() => playSong(index));
-                    return;
+                    console.warn("Player is not ready yet! Queueing the play request.")
+                    playQueue.push(() => playSong(index))
+                    return
                 }
 
                 // Update song information display
-                document.getElementById("song-title").textContent = song.title;
-                document.getElementById("song-artist").textContent = song.artist || 'Unknown Artist';
-                document.getElementById("song-cover").src = song.thumbnail;
-                currentSongIndex = index;
-                currentlyPlayingSong = song; // Update the currently playing song
+                document.getElementById("song-title").textContent = song.title
+                document.getElementById("song-artist").textContent = song.artist || "Unknown Artist"
+                document.getElementById("song-cover").src = song.thumbnail
+                currentSongIndex = index
+                currentlyPlayingSong = song // Update the currently playing song
 
                 // Cue the video but do not play it if not initialized
                 if (!isInitialized) {
-                    player.cueVideoById(song.videoId);
-                    return;
+                    player.cueVideoById(song.videoId)
+                    return
                 }
 
                 // Load and play the video if initialized
-                player.loadVideoById(song.videoId);
-                isPlaying = true;
+                player.loadVideoById(song.videoId)
+                isPlaying = true
 
                 // Update the play/pause icon to pause when a new song starts
-                updatePlayPauseIcon(true);
+                updatePlayPauseIcon(true)
             }
 
             function playSongById(videoId, title, artist, thumbnail) {
                 if (!player) {
-                    console.error("Player is undefined! Queueing the play request.");
-                    playQueue.push(() => playSongById(videoId, title, artist, thumbnail));
-                    return;
+                    console.error("Player is undefined! Queueing the play request.")
+                    playQueue.push(() => playSongById(videoId, title, artist, thumbnail))
+                    return
                 }
                 if (!isPlayerReady) {
-                    console.warn("Player is not ready yet! Queueing the play request.");
-                    playQueue.push(() => playSongById(videoId, title, artist, thumbnail));
-                    return;
+                    console.warn("Player is not ready yet! Queueing the play request.")
+                    playQueue.push(() => playSongById(videoId, title, artist, thumbnail))
+                    return
                 }
 
                 // Update song information display
-                document.getElementById("song-title").textContent = title;
-                document.getElementById("song-artist").textContent = artist || 'Unknown Artist';
-                document.getElementById("song-cover").src = thumbnail;
-                currentSongIndex = currentPlaylist.findIndex((song) => song.videoId === videoId);
+                document.getElementById("song-title").textContent = title
+                document.getElementById("song-artist").textContent = artist || "Unknown Artist"
+                document.getElementById("song-cover").src = thumbnail
+                currentSongIndex = currentPlaylist.findIndex((song) => song.videoId === videoId)
 
                 // Update the currentlyPlayingSong object
                 currentlyPlayingSong = {
@@ -1647,504 +1759,531 @@
                     artist,
                     thumbnail,
                     // Include other properties if necessary
-                };
+                }
 
                 // Cue the video but do not play it if not initialized
                 if (!isInitialized) {
-                    player.cueVideoById(videoId);
-                    return;
+                    player.cueVideoById(videoId)
+                    return
                 }
 
                 // Load and play the video if initialized
-                player.loadVideoById(videoId);
-                isPlaying = true;
+                player.loadVideoById(videoId)
+                isPlaying = true
 
                 // Update the play/pause icon to pause when a new song starts
-                updatePlayPauseIcon(true);
+                updatePlayPauseIcon(true)
             }
 
             function togglePlayPause() {
                 if (!player) {
-                    console.error("Player is undefined!");
-                    return;
+                    console.error("Player is undefined!")
+                    return
                 }
 
                 if (!isInitialized) {
                     // Show the video popup to allow the user to initialize the player
-                    videoPopupVisible = true;
-                    document.getElementById('video-popup').style.display = 'block';
-                    return;
+                    videoPopupVisible = true
+                    document.getElementById("video-popup").style.display = "block"
+                    return
                 }
 
                 if (isPlaying) {
-                    player.pauseVideo();
-                    updatePlayPauseIcon(false);
+                    player.pauseVideo()
+                    updatePlayPauseIcon(false)
                 } else {
                     if (!currentlyPlayingSong) {
                         // No song is currently loaded, so load the song at currentSongIndex
-                        const song = currentPlaylist[currentSongIndex];
+                        const song = currentPlaylist[currentSongIndex]
                         if (song) {
-                            currentlyPlayingSong = song;
-                            player.loadVideoById(song.videoId);
+                            currentlyPlayingSong = song
+                            player.loadVideoById(song.videoId)
                         } else {
-                            console.error("No song to play");
-                            return;
+                            console.error("No song to play")
+                            return
                         }
                     } else {
-                        const currentVideoData = player.getVideoData();
+                        const currentVideoData = player.getVideoData()
                         if (currentVideoData && currentVideoData.video_id !== currentlyPlayingSong.videoId) {
-                            player.loadVideoById(currentlyPlayingSong.videoId);
+                            player.loadVideoById(currentlyPlayingSong.videoId)
                         } else {
-                            player.playVideo();
+                            player.playVideo()
                         }
                     }
-                    updatePlayPauseIcon(true);
+                    updatePlayPauseIcon(true)
                 }
             }
 
             function updatePlayPauseIcon(isPlaying) {
-                const playPauseButton = document.getElementById('play-pause-btn').querySelector('i');
+                const playPauseButton = document.getElementById("play-pause-btn").querySelector("i")
                 if (isPlaying) {
-                    playPauseButton.classList.remove('fa-play');
-                    playPauseButton.classList.add('fa-pause');
+                    playPauseButton.classList.remove("fa-play")
+                    playPauseButton.classList.add("fa-pause")
                 } else {
-                    playPauseButton.classList.remove('fa-pause');
-                    playPauseButton.classList.add('fa-play');
+                    playPauseButton.classList.remove("fa-pause")
+                    playPauseButton.classList.add("fa-play")
                 }
             }
 
-            let isShuffleMode = false;
+            let isShuffleMode = false
 
             // Event listeners
-            document.getElementById('expand-btn').addEventListener('click', () => toggleVideoPopup());
+            document.getElementById("expand-btn").addEventListener("click", () => toggleVideoPopup())
 
             // Shuffle button event listener
-            document.getElementById('shuffle-btn').addEventListener('click', () => {
-                isShuffleMode = !isShuffleMode;
-                document.getElementById('shuffle-btn').style.color = isShuffleMode ? 'var(--color-accent-hover)' : 'var(--color-accent)';
-            });
+            document.getElementById("shuffle-btn").addEventListener("click", () => {
+                isShuffleMode = !isShuffleMode
+                document.getElementById("shuffle-btn").style.color = isShuffleMode
+                    ? "var(--color-accent-hover)"
+                    : "var(--color-accent)"
+            })
 
             // Next and Previous button event listeners
-            document.getElementById('next-btn').addEventListener('click', () => playNextSong());
-            document.getElementById('previous-btn').addEventListener('click', () => playPreviousSong());
+            document.getElementById("next-btn").addEventListener("click", () => playNextSong())
+            document.getElementById("previous-btn").addEventListener("click", () => playPreviousSong())
 
             // Play the next song
             function playNextSong() {
                 let indexInPlaylist = currentPlaylist.findIndex(
-                    song => song.videoId === currentlyPlayingSong?.videoId
-                );
+                    (song) => song.videoId === currentlyPlayingSong?.videoId
+                )
                 if (indexInPlaylist === -1) {
-                    indexInPlaylist = currentSongIndex; // Use currentSongIndex if currentlyPlayingSong not in currentPlaylist
+                    indexInPlaylist = currentSongIndex // Use currentSongIndex if currentlyPlayingSong not in currentPlaylist
                 }
 
                 if (isShuffleMode) {
-                    currentSongIndex = Math.floor(Math.random() * currentPlaylist.length); // Pick a random index
+                    currentSongIndex = Math.floor(Math.random() * currentPlaylist.length) // Pick a random index
                 } else {
-                    currentSongIndex = (indexInPlaylist + 1) % currentPlaylist.length; // Loop back to start if at end
+                    currentSongIndex = (indexInPlaylist + 1) % currentPlaylist.length // Loop back to start if at end
                 }
-                playSong(currentSongIndex);
+                playSong(currentSongIndex)
             }
 
             // Play the previous song
             function playPreviousSong() {
                 let indexInPlaylist = currentPlaylist.findIndex(
-                    song => song.videoId === currentlyPlayingSong?.videoId
-                );
+                    (song) => song.videoId === currentlyPlayingSong?.videoId
+                )
                 if (indexInPlaylist === -1) {
-                    indexInPlaylist = currentSongIndex; // Use currentSongIndex if currentlyPlayingSong not in currentPlaylist
+                    indexInPlaylist = currentSongIndex // Use currentSongIndex if currentlyPlayingSong not in currentPlaylist
                 }
 
                 if (isShuffleMode) {
-                    currentSongIndex = Math.floor(Math.random() * currentPlaylist.length); // Pick a random index
+                    currentSongIndex = Math.floor(Math.random() * currentPlaylist.length) // Pick a random index
                 } else {
-                    currentSongIndex = (indexInPlaylist - 1 + currentPlaylist.length) % currentPlaylist.length; // Loop back to end if at start
+                    currentSongIndex = (indexInPlaylist - 1 + currentPlaylist.length) % currentPlaylist.length // Loop back to end if at start
                 }
-                playSong(currentSongIndex);
+                playSong(currentSongIndex)
             }
 
             // Seek bar functions
             function seekVideo() {
                 if (!player) {
-                    console.error("Player is undefined!");
-                    return;
+                    console.error("Player is undefined!")
+                    return
                 }
-                const time = parseInt(document.getElementById('time-slider').value);
-                player.seekTo(time, true);
+                const time = parseInt(document.getElementById("time-slider").value)
+                player.seekTo(time, true)
             }
 
             // Tooltip for seek bar
-            const timeSlider = document.getElementById('time-slider');
-            const tooltip = document.getElementById('slider-tooltip');
+            const timeSlider = document.getElementById("time-slider")
+            const tooltip = document.getElementById("slider-tooltip")
 
             // Show tooltip on hover
-            timeSlider.addEventListener('mousemove', (event) => {
+            timeSlider.addEventListener("mousemove", (event) => {
                 // Check if the player is defined and the video is loaded
-                if (!player || !player.getDuration || typeof player.getDuration !== 'function') {
-                    tooltip.style.display = 'none';
-                    return;
+                if (!player || !player.getDuration || typeof player.getDuration !== "function") {
+                    tooltip.style.display = "none"
+                    return
                 }
 
-                const duration = player.getDuration();
+                const duration = player.getDuration()
                 if (!duration || isNaN(duration)) {
-                    tooltip.style.display = 'none';
-                    return;
+                    tooltip.style.display = "none"
+                    return
                 }
 
                 // Calculate the hovered time based on slider width and mouse position
-                const rect = timeSlider.getBoundingClientRect();
-                const mouseX = event.clientX - rect.left;
-                const percent = mouseX / rect.width;
-                const hoveredTime = percent * duration;
+                const rect = timeSlider.getBoundingClientRect()
+                const mouseX = event.clientX - rect.left
+                const percent = mouseX / rect.width
+                const hoveredTime = percent * duration
 
                 // Update tooltip position and content
-                tooltip.style.left = `${mouseX + rect.left}px`;
-                tooltip.style.top = `${rect.top - 30}px`; // Adjust to show above the slider
-                tooltip.textContent = formatTime(hoveredTime);
-                tooltip.style.display = 'block';
-            });
+                tooltip.style.left = `${mouseX + rect.left}px`
+                tooltip.style.top = `${rect.top - 30}px` // Adjust to show above the slider
+                tooltip.textContent = formatTime(hoveredTime)
+                tooltip.style.display = "block"
+            })
 
             // Hide tooltip when not hovering over the slider
-            timeSlider.addEventListener('mouseleave', () => {
-                tooltip.style.display = 'none';
-            });
+            timeSlider.addEventListener("mouseleave", () => {
+                tooltip.style.display = "none"
+            })
 
             // Format time to mm:ss
             function formatTime(seconds) {
-                const min = Math.floor(seconds / 60);
-                const sec = Math.floor(seconds % 60);
-                return `${min}:${sec < 10 ? '0' : ''}${sec}`;
+                const min = Math.floor(seconds / 60)
+                const sec = Math.floor(seconds % 60)
+                return `${min}:${sec < 10 ? "0" : ""}${sec}`
             }
 
             function searchPlaylists() {
-                const query = document.getElementById("search-bar").value.toLowerCase();
-                const resultsContainer = document.getElementById("search-results");
-                resultsContainer.innerHTML = '';
-                document.getElementById('clear-btn').style.display = query ? 'inline' : 'none';
+                const query = document.getElementById("search-bar").value.toLowerCase()
+                const resultsContainer = document.getElementById("search-results")
+                resultsContainer.innerHTML = ""
+                document.getElementById("clear-btn").style.display = query ? "inline" : "none"
 
-                if (query.trim() === '') return;
+                if (query.trim() === "") return
 
-                const artistMatches = allSongs.filter(song => song.artist.toLowerCase().includes(query));
-                const playlistMatches = [];
+                const artistMatches = allSongs.filter((song) => song.artist.toLowerCase().includes(query))
+                const playlistMatches = []
 
                 // Search for playlists with valid songs
-                playlists.categories.forEach(category => {
-                    category.playlists.forEach(playlist => {
-                        if (playlist.songs && playlist.songs.length > 0 && playlist.name.toLowerCase().includes(query)) {
+                playlists.categories.forEach((category) => {
+                    category.playlists.forEach((playlist) => {
+                        if (
+                            playlist.songs &&
+                            playlist.songs.length > 0 &&
+                            playlist.name.toLowerCase().includes(query)
+                        ) {
                             playlistMatches.push({
                                 categoryName: category.name,
                                 playlistName: playlist.name,
-                                description: playlist.description
-                            });
+                                description: playlist.description,
+                            })
                         }
-                    });
-                });
+                    })
+                })
 
-                const songMatches = allSongs.filter(song => song.title.toLowerCase().includes(query));
+                const songMatches = allSongs.filter((song) => song.title.toLowerCase().includes(query))
 
                 // Display artist matches
-                artistMatches.forEach(song => {
-                    createSearchResult(
-                        resultsContainer,
-                        song.thumbnail,
-                        '',
-                        song.artist,
-                        song.title,
-                        song.videoId
-                    );
-                });
+                artistMatches.forEach((song) => {
+                    createSearchResult(resultsContainer, song.thumbnail, "", song.artist, song.title, song.videoId)
+                })
 
                 // Display playlist matches that have songs
-                playlistMatches.forEach(match => {
+                playlistMatches.forEach((match) => {
                     createSearchResult(
                         resultsContainer,
-                        'https://via.placeholder.com/60',
-                        'Playlist - ',
+                        "https://via.placeholder.com/60",
+                        "Playlist - ",
                         match.playlistName,
                         match.categoryName,
                         null,
                         match.categoryName
-                    );
-                });
+                    )
+                })
 
                 // Display song matches
-                songMatches.forEach(song => {
+                songMatches.forEach((song) => {
                     createSearchResult(
                         resultsContainer,
                         song.thumbnail,
-                        'Video - ',
+                        "Video - ",
                         song.title,
                         song.artist,
                         song.videoId
-                    );
-                });
+                    )
+                })
 
                 // Show a "No results" message if nothing is found
                 if (resultsContainer.children.length === 0) {
-                    const noResultsMessage = document.createElement('div');
-                    noResultsMessage.className = 'no-results';
-                    noResultsMessage.textContent = 'No results found for your search';
-                    resultsContainer.appendChild(noResultsMessage);
+                    const noResultsMessage = document.createElement("div")
+                    noResultsMessage.className = "no-results"
+                    noResultsMessage.textContent = "No results found for your search"
+                    resultsContainer.appendChild(noResultsMessage)
                 }
             }
 
-            function createSearchResult(container, thumbnail, type, title, subtitle = '', videoId = null, categoryName = '') {
-                const resultItem = document.createElement('div');
-                resultItem.className = 'search-item';
-                resultItem.innerHTML = type === 'Playlist - ' ? `
+            function createSearchResult(
+                container,
+                thumbnail,
+                type,
+                title,
+                subtitle = "",
+                videoId = null,
+                categoryName = ""
+            ) {
+                const resultItem = document.createElement("div")
+                resultItem.className = "search-item"
+                resultItem.innerHTML =
+                    type === "Playlist - "
+                        ? `
     <div class="playlist-icon"><i class="fa-solid fa-list"></i></div>
     <div class="details">
       <strong>${type}${title}</strong>
       <small>${subtitle}</small>
     </div>
-  ` : `
+  `
+                        : `
     <img src="${thumbnail}" alt="${title}">
     <div class="details">
       <strong>${type}${title}</strong>
       <small>${subtitle}</small>
     </div>
-  `;
+  `
 
                 // Set up navigation logic for songs and playlists
                 if (videoId) {
-                    resultItem.onclick = () => { playSongById(videoId, title, subtitle, thumbnail); clearSearchResults(); };
-                } else if (type === 'Playlist - ') {
-                    resultItem.onclick = () => { loadPlaylist(categoryName, title); clearSearchResults(); };
+                    resultItem.onclick = () => {
+                        playSongById(videoId, title, subtitle, thumbnail)
+                        clearSearchResults()
+                    }
+                } else if (type === "Playlist - ") {
+                    resultItem.onclick = () => {
+                        loadPlaylist(categoryName, title)
+                        clearSearchResults()
+                    }
                 }
-                container.appendChild(resultItem);
+                container.appendChild(resultItem)
             }
 
-
             function clearSearchResults() {
-                document.getElementById('search-results').innerHTML = '';
-                document.getElementById('search-bar').value = '';
-                document.getElementById('clear-btn').style.display = 'none';
+                document.getElementById("search-results").innerHTML = ""
+                document.getElementById("search-bar").value = ""
+                document.getElementById("clear-btn").style.display = "none"
             }
 
             function clearSearch() {
-                clearSearchResults();
+                clearSearchResults()
             }
 
             function loadPlaylist(categoryName, playlistName) {
-                clearSearch();
+                clearSearch()
 
                 // Find the category and playlist in the nested structure
-                const category = playlists.categories.find(cat => cat.name === categoryName);
-                if (!category) return;
-                const playlist = category.playlists.find(pl => pl.name === playlistName);
-                if (!playlist) return;
+                const category = playlists.categories.find((cat) => cat.name === categoryName)
+                if (!category) return
+                const playlist = category.playlists.find((pl) => pl.name === playlistName)
+                if (!playlist) return
 
-                currentPlaylist = playlist.songs; // Set the current playlist
-                currentCategory = categoryName;
+                currentPlaylist = playlist.songs // Set the current playlist
+                currentCategory = categoryName
 
-                document.getElementById("playlist-title").textContent = playlistName;
-                renderMusicCards(currentPlaylist);
-                setActiveLink(`a[title='${categoryName}-${playlistName}']`);
+                document.getElementById("playlist-title").textContent = playlistName
+                renderMusicCards(currentPlaylist)
+                setActiveLink(`a[title='${categoryName}-${playlistName}']`)
 
-                const contentContainer = document.querySelector('.main-content');
+                const contentContainer = document.querySelector(".main-content")
                 if (contentContainer) {
-                    contentContainer.scrollTo({ top: 0, behavior: 'smooth' });
+                    contentContainer.scrollTo({ top: 0, behavior: "smooth" })
                 } else {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    window.scrollTo({ top: 0, behavior: "smooth" })
                 }
 
                 // Update currentSongIndex to match the currently playing song in the new playlist, if it's present
                 if (currentlyPlayingSong) {
                     const indexInNewPlaylist = currentPlaylist.findIndex(
-                        song => song.videoId === currentlyPlayingSong.videoId
-                    );
+                        (song) => song.videoId === currentlyPlayingSong.videoId
+                    )
                     if (indexInNewPlaylist !== -1) {
-                        currentSongIndex = indexInNewPlaylist;
+                        currentSongIndex = indexInNewPlaylist
                     }
                 } else {
                     // Default to the first song if nothing is currently playing
-                    currentSongIndex = 0;
-                    currentlyPlayingSong = currentPlaylist[0];
+                    currentSongIndex = 0
+                    currentlyPlayingSong = currentPlaylist[0]
                     // Update song display information
-                    document.getElementById("song-title").textContent = currentlyPlayingSong.title;
-                    document.getElementById("song-artist").textContent = currentlyPlayingSong.artist || 'Unknown Artist';
-                    document.getElementById("song-cover").src = currentlyPlayingSong.thumbnail;
-                    player.cueVideoById(currentlyPlayingSong.videoId);
+                    document.getElementById("song-title").textContent = currentlyPlayingSong.title
+                    document.getElementById("song-artist").textContent =
+                        currentlyPlayingSong.artist || "Unknown Artist"
+                    document.getElementById("song-cover").src = currentlyPlayingSong.thumbnail
+                    player.cueVideoById(currentlyPlayingSong.videoId)
                 }
             }
             function getQueryParam(param) {
-                const urlParams = new URLSearchParams(window.location.search);
-                return urlParams.get(param);
+                const urlParams = new URLSearchParams(window.location.search)
+                return urlParams.get(param)
             }
 
             function buildUrl(base, path) {
                 // Ensure the path ends with .json unless it already does
-                if (!path.toLowerCase().endsWith('.json')) {
-                    path = path.endsWith('/') ? `${path}playlist.json` : `${path}.json`;
+                if (!path.toLowerCase().endsWith(".json")) {
+                    path = path.endsWith("/") ? `${path}playlist.json` : `${path}.json`
                 }
 
                 // Extract filename for display purposes
-                const filename = path.split('/').pop().replace('.json', ''); // Get the file name without extension
+                const filename = path.split("/").pop().replace(".json", "") // Get the file name without extension
 
                 // Add the filename to the `.logo` element without replacing its existing content
-                const logoElement = document.querySelector('.logo');
+                const logoElement = document.querySelector(".logo")
                 if (logoElement) {
-                    logoElement.insertAdjacentHTML('beforeend', `<h1>${filename}</h1>`);
+                    logoElement.insertAdjacentHTML("beforeend", `<h1>${filename}</h1>`)
                 }
 
-                return `${base}${path}`;
+                return `${base}${path}`
             }
-
 
             // Function to determine the playlist URL based on the provided URL parameters
             function getPlaylistUrl() {
                 // Define the base URLs for different parameters
                 const baseUrls = {
-                    gitlist: 'https://raw.githubusercontent.com/',
-                    playlist: 'playlists/', // Local playlists folder base URL
-                };
+                    gitlist: "https://raw.githubusercontent.com/",
+                    playlist: "playlists/", // Local playlists folder base URL
+                }
 
                 // Get URL parameters
-                const gitlistParam = getQueryParam('gitlist');
-                const playlistParam = getQueryParam('playlist');
+                const gitlistParam = getQueryParam("gitlist")
+                const playlistParam = getQueryParam("playlist")
 
                 // Determine which URL to use based on the parameters present
                 if (gitlistParam) {
                     // Automatically build the GitHub raw file URL
-                    return buildUrl(baseUrls.gitlist, gitlistParam);
+                    return buildUrl(baseUrls.gitlist, gitlistParam)
                 } else if (playlistParam) {
                     // Use the playlist folder base URL and construct the local file path
-                    return buildUrl(baseUrls.playlist, playlistParam);
+                    return buildUrl(baseUrls.playlist, playlistParam)
                 } else {
                     // Default fallback URL (could be a local file or some placeholder)
-                    return buildUrl('playlists/', 'music.json');
+                    return buildUrl("playlists/", "music.json")
                 }
             }
 
             // The loadPlaylists function now only handles the fetching part
             function loadPlaylists() {
-                const playlistUrl = getPlaylistUrl();
+                const playlistUrl = getPlaylistUrl()
                 // Fetch the constructed URL
                 fetch(playlistUrl)
-                    .then(response => response.json())
-                    .then(data => {
-                        playlists = data; // Save the entire playlist structure
+                    .then((response) => response.json())
+                    .then((data) => {
+                        playlists = data // Save the entire playlist structure
 
-                        const playlistList = document.getElementById("playlist-list");
-                        playlistList.innerHTML = ""; // Clear the existing menu
+                        const playlistList = document.getElementById("playlist-list")
+                        playlistList.innerHTML = "" // Clear the existing menu
 
                         // **Add the 'Explore' link first**
-                        const exploreItem = document.createElement("li");
-                        exploreItem.innerHTML = `<a id="explore-link" onclick="loadHome()">Explore</a>`;
-                        playlistList.appendChild(exploreItem);
+                        const exploreItem = document.createElement("li")
+                        exploreItem.innerHTML = `<a id="explore-link" onclick="loadHome()">Explore</a>`
+                        playlistList.appendChild(exploreItem)
 
                         // Loop through categories and generate the nested menu structure
-                        playlists.categories.forEach(category => {
+                        playlists.categories.forEach((category) => {
                             // Filter playlists with no songs
-                            const validPlaylists = category.playlists.filter(playlist => playlist.songs && playlist.songs.length > 0);
-                            if (validPlaylists.length === 0) return; // Skip categories with no valid playlists
+                            const validPlaylists = category.playlists.filter(
+                                (playlist) => playlist.songs && playlist.songs.length > 0
+                            )
+                            if (validPlaylists.length === 0) return // Skip categories with no valid playlists
 
                             // Create a category list item
-                            const categoryItem = document.createElement("li");
-                            const categoryLink = document.createElement("a");
-                            categoryLink.textContent = category.name;
-                            categoryLink.className = "category-title";
-                            categoryLink.href = "#"; // Add href for cursor pointer
+                            const categoryItem = document.createElement("li")
+                            const categoryLink = document.createElement("a")
+                            categoryLink.textContent = category.name
+                            categoryLink.className = "category-title"
+                            categoryLink.href = "#" // Add href for cursor pointer
 
                             // **Add Font Awesome arrow icon to category**
-                            const arrowIcon = document.createElement("span");
-                            arrowIcon.className = "arrow-icon collapsed"; // Start collapsed
-                            arrowIcon.innerHTML = '<i class="fa-solid fa-chevron-right"></i>'; // Font Awesome right arrow
-                            categoryLink.prepend(arrowIcon);
+                            const arrowIcon = document.createElement("span")
+                            arrowIcon.className = "arrow-icon collapsed" // Start collapsed
+                            arrowIcon.innerHTML = '<i class="fa-solid fa-chevron-right"></i>' // Font Awesome right arrow
+                            categoryLink.prepend(arrowIcon)
 
-                            categoryItem.appendChild(categoryLink);
+                            categoryItem.appendChild(categoryLink)
 
                             // Create a sublist for playlists under this category
-                            const subList = document.createElement("ul");
-                            subList.className = "subcategory-list";
-                            subList.style.display = "none"; // **Start collapsed**
+                            const subList = document.createElement("ul")
+                            subList.className = "subcategory-list"
+                            subList.style.display = "none" // **Start collapsed**
 
-                            validPlaylists.forEach(playlist => {
-                                if (playlist.songs && playlist.songs.length > 0) { // Ensure the playlist has songs
-                                    const playlistItem = document.createElement("li");
-                                    playlistItem.innerHTML = `<a title="${category.name}-${playlist.name}" onclick="loadPlaylist('${category.name}', '${playlist.name}')"><span class="playlist-name">${playlist.name}</span></a>`;
-                                    subList.appendChild(playlistItem);
+                            validPlaylists.forEach((playlist) => {
+                                if (playlist.songs && playlist.songs.length > 0) {
+                                    // Ensure the playlist has songs
+                                    const playlistItem = document.createElement("li")
+                                    playlistItem.innerHTML = `<a title="${category.name}-${playlist.name}" onclick="loadPlaylist('${category.name}', '${playlist.name}')"><span class="playlist-name">${playlist.name}</span></a>`
+                                    subList.appendChild(playlistItem)
                                 }
-                            });
+                            })
 
                             // Add the sublist to the category item only if it has valid playlists
                             if (subList.children.length > 0) {
-                                categoryItem.appendChild(subList);
-                                playlistList.appendChild(categoryItem);
+                                categoryItem.appendChild(subList)
+                                playlistList.appendChild(categoryItem)
 
                                 // **Add click event to toggle sublist**
-                                categoryLink.addEventListener('click', (e) => {
-                                    e.preventDefault(); // Prevent default action
-                                    const isCollapsed = subList.style.display === "none";
-                                    subList.style.display = isCollapsed ? "block" : "none";
+                                categoryLink.addEventListener("click", (e) => {
+                                    e.preventDefault() // Prevent default action
+                                    const isCollapsed = subList.style.display === "none"
+                                    subList.style.display = isCollapsed ? "block" : "none"
 
                                     // **Toggle arrow direction using Font Awesome icons**
-                                    arrowIcon.innerHTML = isCollapsed ? '<i class="fa-solid fa-chevron-down"></i>' : '<i class="fa-solid fa-chevron-right"></i>'; // Down or right arrow
+                                    arrowIcon.innerHTML = isCollapsed
+                                        ? '<i class="fa-solid fa-chevron-down"></i>'
+                                        : '<i class="fa-solid fa-chevron-right"></i>' // Down or right arrow
 
                                     // **Add or remove the `opened` class based on collapsed state**
                                     if (isCollapsed) {
-                                        categoryLink.classList.add("opened");
+                                        categoryLink.classList.add("opened")
                                     } else {
-                                        categoryLink.classList.remove("opened");
+                                        categoryLink.classList.remove("opened")
                                     }
-                                });
+                                })
                             }
-                        });
+                        })
 
                         // Flatten all songs into `allSongs` array for search purposes
                         allSongs = playlists.categories.reduce((acc, category) => {
-                            category.playlists.forEach(playlist => {
+                            category.playlists.forEach((playlist) => {
                                 if (playlist.songs && playlist.songs.length > 0) {
-                                    playlist.songs.forEach(song => acc.push({ ...song, categoryName: category.name, playlistName: playlist.name }));
+                                    playlist.songs.forEach((song) =>
+                                        acc.push({
+                                            ...song,
+                                            categoryName: category.name,
+                                            playlistName: playlist.name,
+                                        })
+                                    )
                                 }
-                            });
-                            return acc;
-                        }, []);
+                            })
+                            return acc
+                        }, [])
 
                         // Load the home screen only after playlists are fully loaded
-                        loadHome();
+                        loadHome()
                     })
-                    .catch(error => {
-                        console.error("Failed to load playlists:", error);
-                    });
+                    .catch((error) => {
+                        console.error("Failed to load playlists:", error)
+                    })
             }
 
-            const bodyElement = document.body;
-            const themeIcon = document.getElementById('theme-icon');
+            const bodyElement = document.body
+            const themeIcon = document.getElementById("theme-icon")
 
-            const cachedTheme = localStorage.getItem('theme');
+            const cachedTheme = localStorage.getItem("theme")
             if (cachedTheme) {
-                bodyElement.classList.toggle('dark-theme', cachedTheme === 'dark');
-                themeIcon.className = cachedTheme === 'dark' ? 'fa-solid fa-circle-half-stroke fa-rotate-180' : 'fa-solid fa-circle-half-stroke';
+                bodyElement.classList.toggle("dark-theme", cachedTheme === "dark")
+                themeIcon.className =
+                    cachedTheme === "dark"
+                        ? "fa-solid fa-circle-half-stroke fa-rotate-180"
+                        : "fa-solid fa-circle-half-stroke"
             }
 
-            document.getElementById('theme-toggle').addEventListener('click', () => {
-                const bodyElement = document.body;
-                const themeIcon = document.getElementById('theme-icon');
-                const isDarkTheme = bodyElement.classList.toggle('dark-theme');
-                themeIcon.className = isDarkTheme ? 'fa-solid fa-circle-half-stroke fa-rotate-180' : 'fa-solid fa-circle-half-stroke';
-                localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
-            });
+            document.getElementById("theme-toggle").addEventListener("click", () => {
+                const bodyElement = document.body
+                const themeIcon = document.getElementById("theme-icon")
+                const isDarkTheme = bodyElement.classList.toggle("dark-theme")
+                themeIcon.className = isDarkTheme
+                    ? "fa-solid fa-circle-half-stroke fa-rotate-180"
+                    : "fa-solid fa-circle-half-stroke"
+                localStorage.setItem("theme", isDarkTheme ? "dark" : "light")
+            })
 
             // Initialize Playlists and Home
-            loadPlaylists();
+            loadPlaylists()
 
             // Expose functions to global scope
-            window.loadHome = loadHome;
-            window.playSong = playSong;
-            window.playSongById = playSongById;
-            window.togglePlayPause = togglePlayPause;
-            window.clearSearch = clearSearch;
-            window.seekVideo = seekVideo;
-            window.closeVideoPopup = closeVideoPopup;
-            window.toggleVideoPopup = toggleVideoPopup;
-            window.loadPlaylist = loadPlaylist;
-            window.searchPlaylists = searchPlaylists;
-        });
-
+            window.loadHome = loadHome
+            window.playSong = playSong
+            window.playSongById = playSongById
+            window.togglePlayPause = togglePlayPause
+            window.clearSearch = clearSearch
+            window.seekVideo = seekVideo
+            window.closeVideoPopup = closeVideoPopup
+            window.toggleVideoPopup = toggleVideoPopup
+            window.loadPlaylist = loadPlaylist
+            window.searchPlaylists = searchPlaylists
+        })
   </script>
-
-
-
 </body>
 
 </html>
