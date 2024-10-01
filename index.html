@@ -321,7 +321,7 @@
       }
 
       .video-popup #full-popup {
-        right: 6px !important;
+        right: -5px !important;
       }
 
       .sidebar.active {
@@ -820,7 +820,8 @@
       transition: background-color var(--transition-speed);
       display: none;
       background: var(--color-accent);
-      color: var(--color-accent-text)
+      color: var(--color-accent-text);
+      min-width: 25px!important;
     }
 
     .video-popup:hover #full-popup,
@@ -840,8 +841,7 @@
 
     .video-popup #full-popup {
       bottom: 5px;
-      right: -7px;
-      min-width: 30px;
+      min-width: 30px!important;
       height: 30px
     }
 
@@ -1369,8 +1369,9 @@
                     width: "100%",
                     videoId: "", // Keep empty; load videos dynamically
                     playerVars: {
-                        controls: 1, // Enable controls so user can click play
-                        rel: 0,
+                      controls: 1,  // Enable basic controls
+                      rel: 0,       // Disable related videos at the end
+                      fs: 0 ,        // Disable fullscreen button
                     },
                     events: {
                         onStateChange: onPlayerStateChange,
@@ -1398,8 +1399,10 @@
                         width: "100%",
                         videoId: "", // Keep empty; load videos dynamically
                         playerVars: {
-                            controls: 1, // Enable controls so user can click play
-                            rel: 0,
+                          controls: 1,  // Enable basic controls
+                          rel: 0,       // Disable related videos at the end
+                          fs: 0  ,       // Disable fullscreen button
+                          modestbranding: 1,
                         },
                         events: {
                             onStateChange: onPlayerStateChange,
