@@ -1,5 +1,7 @@
 # 🎵 Playlist.json — Community-Powered YouTube Playlists
 
+This project was built entirely in the [aijs browser based code editor](https://aijs.io/home).
+
 Playlist.json is a lightweight, front-end-only web application that serves YouTube media content without relying on the YouTube API. It aims to create a community-managed repository of YouTube playlists, accessible through a simple JSON structure that anyone can contribute to or customize. This approach allows you to create, share, and manage media playlists easily—no API keys, no server-side processing, and no backend setup required.
 
 ![cover image](cover.png)
