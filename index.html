@@ -1440,6 +1440,9 @@
                     player.cueVideoById(song.videoId)
                     currentSongIndex = 0
 
+                    // Update the page title to reflect the initial song
+                    updateMetaTitle(song.title, song.artist || "Unknown Artist");
+
                     // **Set currentlyPlayingSong to the first song**
                     currentlyPlayingSong = song
                 }
@@ -1734,6 +1737,9 @@
                 player.loadVideoById(song.videoId)
                 isPlaying = true
 
+                // Update the meta title
+                updateMetaTitle(song.title, song.artist || "Unknown Artist");
+
                 // Update the play/pause icon to pause when a new song starts
                 updatePlayPauseIcon(true)
             }
@@ -1756,6 +1762,9 @@
                 document.getElementById("song-cover").src = thumbnail
                 currentSongIndex = currentPlaylist.findIndex((song) => song.videoId === videoId)
 
+                // Update the meta title
+                updateMetaTitle(title, artist || "Unknown Artist");
+
                 // Update the currentlyPlayingSong object
                 currentlyPlayingSong = {
                     videoId,
@@ -1777,6 +1786,10 @@
 
                 // Update the play/pause icon to pause when a new song starts
                 updatePlayPauseIcon(true)
+            }
+
+            function updateMetaTitle(title, artist) {
+                document.title = `${title} - ${artist}`;
             }
 
             function togglePlayPause() {
