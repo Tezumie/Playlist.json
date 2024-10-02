@@ -4,6 +4,612 @@
             "name": "Billboard Hits",
             "playlists": [
                 {
+                    "name": "Top Hits 2024 ",
+                    "description": "TOP 100 Songs of 2024 - Billboard Hot 100 - Top Hits 2024 ",
+                    "songs": [
+                        {
+                            "title": "Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video)",
+                            "videoId": "kPa7bsKwL-c",
+                            "thumbnail": "https://img.youtube.com/vi/kPa7bsKwL-c/hqdefault.jpg",
+                            "artist": "Lady Gaga"
+                        },
+                        {
+                            "title": "Sabrina Carpenter - Please Please Please (Official Video)",
+                            "videoId": "cF1Na4AIecM",
+                            "thumbnail": "https://img.youtube.com/vi/cF1Na4AIecM/hqdefault.jpg",
+                            "artist": "Sabrina Carpenter"
+                        },
+                        {
+                            "title": "Post Malone - I Had Some Help (feat. Morgan Wallen) (Official Video)",
+                            "videoId": "4QIZE708gJ4",
+                            "thumbnail": "https://img.youtube.com/vi/4QIZE708gJ4/hqdefault.jpg",
+                            "artist": "Post Malone"
+                        },
+                        {
+                            "title": "Shawn Mendes - Why Why Why (Official Music Video)",
+                            "videoId": "0M1UCYRZAtM",
+                            "thumbnail": "https://img.youtube.com/vi/0M1UCYRZAtM/hqdefault.jpg",
+                            "artist": "Shawn Mendes"
+                        },
+                        {
+                            "title": "Post Malone - Losers (Lyric Video) ft. Jelly Roll",
+                            "videoId": "uKiF-UMnB9A",
+                            "thumbnail": "https://img.youtube.com/vi/uKiF-UMnB9A/hqdefault.jpg",
+                            "artist": "Post Malone"
+                        },
+                        {
+                            "title": "Not Like Us",
+                            "videoId": "T6eK-2OQtew",
+                            "thumbnail": "https://img.youtube.com/vi/T6eK-2OQtew/hqdefault.jpg",
+                            "artist": "Kendrick Lamar"
+                        },
+                        {
+                            "title": "Sabrina Carpenter - Taste (Lyric Video)",
+                            "videoId": "z9Q9OzL_wI8",
+                            "thumbnail": "https://img.youtube.com/vi/z9Q9OzL_wI8/hqdefault.jpg",
+                            "artist": "Sabrina Carpenter"
+                        },
+                        {
+                            "title": "Billie Eilish - BIRDS OF A FEATHER (BILLIE BY FINNEAS)",
+                            "videoId": "1IUCyniCWzg",
+                            "thumbnail": "https://img.youtube.com/vi/1IUCyniCWzg/hqdefault.jpg",
+                            "artist": "Billie Eilish"
+                        },
+                        {
+                            "title": "Mario - Space (Official Music Video)",
+                            "videoId": "b1W6DTYQn_A",
+                            "thumbnail": "https://img.youtube.com/vi/b1W6DTYQn_A/hqdefault.jpg",
+                            "artist": "Mario"
+                        },
+                        {
+                            "title": "BIA, Lil Yachty - PISSED OFF (Official Music Video)",
+                            "videoId": "CQ8y7qYaYTQ",
+                            "thumbnail": "https://img.youtube.com/vi/CQ8y7qYaYTQ/hqdefault.jpg",
+                            "artist": "BIA"
+                        },
+                        {
+                            "title": "Taylor Swift - Fortnight (feat. Post Malone) (Official Music Video)",
+                            "videoId": "q3zqJs7JUCQ",
+                            "thumbnail": "https://img.youtube.com/vi/q3zqJs7JUCQ/hqdefault.jpg",
+                            "artist": "Taylor Swift"
+                        },
+                        {
+                            "title": "Myles Smith - Stargazing (Lyric Video)",
+                            "videoId": "tKml80alH3Y",
+                            "thumbnail": "https://img.youtube.com/vi/tKml80alH3Y/hqdefault.jpg",
+                            "artist": "Myles Smith"
+                        },
+                        {
+                            "title": "Sabrina Carpenter - Espresso (Official Video)",
+                            "videoId": "eVli-tstM5E",
+                            "thumbnail": "https://img.youtube.com/vi/eVli-tstM5E/hqdefault.jpg",
+                            "artist": "Sabrina Carpenter"
+                        },
+                        {
+                            "title": "BigXthaPlug - The Largest (Official Music Video)",
+                            "videoId": "3QwZjhHcLZk",
+                            "thumbnail": "https://img.youtube.com/vi/3QwZjhHcLZk/hqdefault.jpg",
+                            "artist": "BigXthaPlug"
+                        },
+                        {
+                            "title": "The Weeknd - Dancing In The Flames (Official Music Video)",
+                            "videoId": "MLlSSJ0z7xM",
+                            "thumbnail": "https://img.youtube.com/vi/MLlSSJ0z7xM/hqdefault.jpg",
+                            "artist": "The Weeknd"
+                        },
+                        {
+                            "title": "Teddy Swims - Lose Control (Lyrics)",
+                            "videoId": "XpDEdMu_6O8",
+                            "thumbnail": "https://img.youtube.com/vi/XpDEdMu_6O8/hqdefault.jpg",
+                            "artist": "7clouds"
+                        },
+                        {
+                            "title": "Future - TOO FAST (Official Music Video)",
+                            "videoId": "1YHDGLqH1VM",
+                            "thumbnail": "https://img.youtube.com/vi/1YHDGLqH1VM/hqdefault.jpg",
+                            "artist": "Future"
+                        },
+                        {
+                            "title": "Chappell Roan - Good Luck, Babe!",
+                            "videoId": "ngyAGK_cc4Q",
+                            "thumbnail": "https://img.youtube.com/vi/ngyAGK_cc4Q/hqdefault.jpg",
+                            "artist": "Cakes \\u0026 Eclairs"
+                        },
+                        {
+                            "title": "Billie Eilish - LUNCH (Official Music Video)",
+                            "videoId": "MB3VkzPdgLA",
+                            "thumbnail": "https://img.youtube.com/vi/MB3VkzPdgLA/hqdefault.jpg",
+                            "artist": "Billie Eilish"
+                        },
+                        {
+                            "title": "Djo - End of Beginning (Official Lyric Video)",
+                            "videoId": "EoVQ_TQFJy0",
+                            "thumbnail": "https://img.youtube.com/vi/EoVQ_TQFJy0/hqdefault.jpg",
+                            "artist": "Djo Music"
+                        },
+                        {
+                            "title": "Miley Cyrus - Flowers (Official Video)",
+                            "videoId": "G7KNmW9a75Y",
+                            "thumbnail": "https://img.youtube.com/vi/G7KNmW9a75Y/hqdefault.jpg",
+                            "artist": "Miley Cyrus"
+                        },
+                        {
+                            "title": "Dasha - Austin (Official Music Video)",
+                            "videoId": "FyjnbSsZ2tc",
+                            "thumbnail": "https://img.youtube.com/vi/FyjnbSsZ2tc/hqdefault.jpg",
+                            "artist": "Dasha"
+                        },
+                        {
+                            "title": "Ariana Grande - we can't be friends (wait for your love) (official music video)",
+                            "videoId": "KNtJGQkC-WI",
+                            "thumbnail": "https://img.youtube.com/vi/KNtJGQkC-WI/hqdefault.jpg",
+                            "artist": "Ariana Grande"
+                        },
+                        {
+                            "title": "Tems - Burning (Official Video)",
+                            "videoId": "_T94j4P8_nk",
+                            "thumbnail": "https://img.youtube.com/vi/_T94j4P8_nk/hqdefault.jpg",
+                            "artist": "Tems"
+                        },
+                        {
+                            "title": "Eminem - Houdini [Official Music Video]",
+                            "videoId": "22tVWwmTie8",
+                            "thumbnail": "https://img.youtube.com/vi/22tVWwmTie8/hqdefault.jpg",
+                            "artist": "EminemMusic"
+                        },
+                        {
+                            "title": "Sabrina Carpenter - Bed Chem (Official Lyric Video)",
+                            "videoId": "x8VkB8ap_FQ",
+                            "thumbnail": "https://img.youtube.com/vi/x8VkB8ap_FQ/hqdefault.jpg",
+                            "artist": "Sabrina Carpenter"
+                        },
+                        {
+                            "title": "Tommy Richman - MILLION DOLLAR BABY (Official Music Video)",
+                            "videoId": "Zf1d8SGuxfs",
+                            "thumbnail": "https://img.youtube.com/vi/Zf1d8SGuxfs/hqdefault.jpg",
+                            "artist": "Tommy Richman"
+                        },
+                        {
+                            "title": "Dua Lipa - Houdini (Official Music Video)",
+                            "videoId": "suAR1PYFNYA",
+                            "thumbnail": "https://img.youtube.com/vi/suAR1PYFNYA/hqdefault.jpg",
+                            "artist": "Dua Lipa"
+                        },
+                        {
+                            "title": "SEVDALIZA - ALIBI FT. PABLLO VITTAR \\u0026 YSEULT (OFFICIAL MUSIC VIDEO)",
+                            "videoId": "qVqFuokjRMc",
+                            "thumbnail": "https://img.youtube.com/vi/qVqFuokjRMc/hqdefault.jpg",
+                            "artist": "Sevdaliza"
+                        },
+                        {
+                            "title": "Tate McRae - greedy (Official Video)",
+                            "videoId": "To4SWGZkEPk",
+                            "thumbnail": "https://img.youtube.com/vi/To4SWGZkEPk/hqdefault.jpg",
+                            "artist": "Tate McRae"
+                        },
+                        {
+                            "title": "Chappell Roan - HOT TO GO! (Official Music Video)",
+                            "videoId": "xaPNR-_Cfn0",
+                            "thumbnail": "https://img.youtube.com/vi/xaPNR-_Cfn0/hqdefault.jpg",
+                            "artist": "Chappell Roan"
+                        },
+                        {
+                            "title": "CENTRAL CEE FT. LIL BABY - BAND4BAND (MUSIC VIDEO)",
+                            "videoId": "pDddlvCfTiw",
+                            "thumbnail": "https://img.youtube.com/vi/pDddlvCfTiw/hqdefault.jpg",
+                            "artist": "Central Cee"
+                        },
+                        {
+                            "title": "Asake, Travis Scott - Active (Official Video)",
+                            "videoId": "JRF_sdTXpGw",
+                            "thumbnail": "https://img.youtube.com/vi/JRF_sdTXpGw/hqdefault.jpg",
+                            "artist": "ASAKE"
+                        },
+                        {
+                            "title": "Beyoncé - TEXAS HOLD 'EM (Official Lyric Video)",
+                            "videoId": "jCOX8dT9q8M",
+                            "thumbnail": "https://img.youtube.com/vi/jCOX8dT9q8M/hqdefault.jpg",
+                            "artist": "Beyoncé"
+                        },
+                        {
+                            "title": "Future, Metro Boomin, Kendrick Lamar - Like That (Official Audio)",
+                            "videoId": "N9bKBAA22Go",
+                            "thumbnail": "https://img.youtube.com/vi/N9bKBAA22Go/hqdefault.jpg",
+                            "artist": "Future"
+                        },
+                        {
+                            "title": "Myke Towers - LA FALDA (Video Oficial)",
+                            "videoId": "pyZtr3_dN3E",
+                            "thumbnail": "https://img.youtube.com/vi/pyZtr3_dN3E/hqdefault.jpg",
+                            "artist": "Myke Towers"
+                        },
+                        {
+                            "title": "Zach Bryan - I Remember Everything (feat. Kacey Musgraves)",
+                            "videoId": "ZVVvJjwzl6c",
+                            "thumbnail": "https://img.youtube.com/vi/ZVVvJjwzl6c/hqdefault.jpg",
+                            "artist": "Zach Bryan"
+                        },
+                        {
+                            "title": "Taylor Swift - Cruel Summer (Official Audio)",
+                            "videoId": "ic8j13piAhQ",
+                            "thumbnail": "https://img.youtube.com/vi/ic8j13piAhQ/hqdefault.jpg",
+                            "artist": "Taylor Swift"
+                        },
+                        {
+                            "title": "Marshmello, Kane Brown - Miles On It (Official Music Video)",
+                            "videoId": "RMmoyP_cpEg",
+                            "thumbnail": "https://img.youtube.com/vi/RMmoyP_cpEg/hqdefault.jpg",
+                            "artist": "Marshmello"
+                        },
+                        {
+                            "title": "Teddy Swims - The Door (Official Music Video)",
+                            "videoId": "VSXT4a2kRHA",
+                            "thumbnail": "https://img.youtube.com/vi/VSXT4a2kRHA/hqdefault.jpg",
+                            "artist": "Teddy Swims"
+                        },
+                        {
+                            "title": "Tate McRae - It's ok I'm ok (Official Video)",
+                            "videoId": "Bpaf6Dm9iRc",
+                            "thumbnail": "https://img.youtube.com/vi/Bpaf6Dm9iRc/hqdefault.jpg",
+                            "artist": "Tate McRae"
+                        },
+                        {
+                            "title": "Benson Boone - Beautiful Things (Official Music Video)",
+                            "videoId": "Oa_RSwwpPaA",
+                            "thumbnail": "https://img.youtube.com/vi/Oa_RSwwpPaA/hqdefault.jpg",
+                            "artist": "Benson Boone"
+                        },
+                        {
+                            "title": "Doja Cat - Agora Hills (Official Video)",
+                            "videoId": "0c66ksfigtU",
+                            "thumbnail": "https://img.youtube.com/vi/0c66ksfigtU/hqdefault.jpg",
+                            "artist": "Doja Cat"
+                        },
+                        {
+                            "title": "Kendrick Lamar - Euphoria (Lyrics) (Drake Diss)",
+                            "videoId": "_sJ79aDQTeQ",
+                            "thumbnail": "https://img.youtube.com/vi/_sJ79aDQTeQ/hqdefault.jpg",
+                            "artist": "VibesOnly"
+                        },
+                        {
+                            "title": "Luke Combs - Fast Car (Lyrics)",
+                            "videoId": "kq6yGtEQlpU",
+                            "thumbnail": "https://img.youtube.com/vi/kq6yGtEQlpU/hqdefault.jpg",
+                            "artist": "TheGoodVibe"
+                        },
+                        {
+                            "title": "Charli xcx - Apple (official lyric video)",
+                            "videoId": "CPWxExGk7PM",
+                            "thumbnail": "https://img.youtube.com/vi/CPWxExGk7PM/hqdefault.jpg",
+                            "artist": "Charli xcx"
+                        },
+                        {
+                            "title": "SZA - Snooze (Audio)",
+                            "videoId": "Sv5yCzPCkv8",
+                            "thumbnail": "https://img.youtube.com/vi/Sv5yCzPCkv8/hqdefault.jpg",
+                            "artist": "SZA"
+                        },
+                        {
+                            "title": "Addison Rae - Diet Pepsi (Official Video)",
+                            "videoId": "Hki6RqI-eMA",
+                            "thumbnail": "https://img.youtube.com/vi/Hki6RqI-eMA/hqdefault.jpg",
+                            "artist": "Addison Rae"
+                        },
+                        {
+                            "title": "Jelly Roll - Liar (Official Music Video)",
+                            "videoId": "HcNILY4gtNI",
+                            "thumbnail": "https://img.youtube.com/vi/HcNILY4gtNI/hqdefault.jpg",
+                            "artist": "Jelly Roll"
+                        },
+                        {
+                            "title": "21 Savage - redrum (Official Music Video)",
+                            "videoId": "U4mADkt6o-M",
+                            "thumbnail": "https://img.youtube.com/vi/U4mADkt6o-M/hqdefault.jpg",
+                            "artist": "21 Savage"
+                        },
+                        {
+                            "title": "Hanumankind – Big Dawgs | Ft. Kalmi (Official Music Video) | Def Jam India",
+                            "videoId": "hOHKltAiKXQ",
+                            "thumbnail": "https://img.youtube.com/vi/hOHKltAiKXQ/hqdefault.jpg",
+                            "artist": "Hanumankind"
+                        },
+                        {
+                            "title": "Ariana Grande - yes, and? (official music video)",
+                            "videoId": "eB6txyhHFG4",
+                            "thumbnail": "https://img.youtube.com/vi/eB6txyhHFG4/hqdefault.jpg",
+                            "artist": "Ariana Grande"
+                        },
+                        {
+                            "title": "Jelly Roll - I Am Not Okay (Official Lyric Video)",
+                            "videoId": "Qop5XLgwkNc",
+                            "thumbnail": "https://img.youtube.com/vi/Qop5XLgwkNc/hqdefault.jpg",
+                            "artist": "Jelly Roll"
+                        },
+                        {
+                            "title": "Dua Lipa - Training Season (Official Music Video)",
+                            "videoId": "ZjBZ8MUnB0E",
+                            "thumbnail": "https://img.youtube.com/vi/ZjBZ8MUnB0E/hqdefault.jpg",
+                            "artist": "Dua Lipa"
+                        },
+                        {
+                            "title": "Artemas - i like the way you kiss me (lyric video)",
+                            "videoId": "ODDRRXMi22E",
+                            "thumbnail": "https://img.youtube.com/vi/ODDRRXMi22E/hqdefault.jpg",
+                            "artist": "Artemas"
+                        },
+                        {
+                            "title": "Dua Lipa - Dance The Night (From Barbie The Album) [Official Music Video]",
+                            "videoId": "OiC1rgCPmUQ",
+                            "thumbnail": "https://img.youtube.com/vi/OiC1rgCPmUQ/hqdefault.jpg",
+                            "artist": "Dua Lipa"
+                        },
+                        {
+                            "title": "Madison Beer - Make You Mine (Official Music Video)",
+                            "videoId": "XFR7v5ix5hU",
+                            "thumbnail": "https://img.youtube.com/vi/XFR7v5ix5hU/hqdefault.jpg",
+                            "artist": "Madison Beer"
+                        },
+                        {
+                            "title": "Tyla - Water (Official Music Video)",
+                            "videoId": "XoiOOiuH8iI",
+                            "thumbnail": "https://img.youtube.com/vi/XoiOOiuH8iI/hqdefault.jpg",
+                            "artist": "Tyla"
+                        },
+                        {
+                            "title": "[CHOREOGRAPHY] 지민 (Jimin) ‘Who’ Dance Practice",
+                            "videoId": "xwADdJym_y4",
+                            "thumbnail": "https://img.youtube.com/vi/xwADdJym_y4/hqdefault.jpg",
+                            "artist": "BANGTANTV"
+                        },
+                        {
+                            "title": "Morgan Wallen - Last Night (One Record At A Time Sessions)",
+                            "videoId": "bUjPPBxbQrQ",
+                            "thumbnail": "https://img.youtube.com/vi/bUjPPBxbQrQ/hqdefault.jpg",
+                            "artist": "Morgan Wallen"
+                        },
+                        {
+                            "title": "Jack Harlow - Lovin On Me [Official Music Video]",
+                            "videoId": "Iq8h3GEe22o",
+                            "thumbnail": "https://img.youtube.com/vi/Iq8h3GEe22o/hqdefault.jpg",
+                            "artist": "Jack Harlow"
+                        },
+                        {
+                            "title": "Megan Thee Stallion - Mamushi (Lyrics) (feat. Yuki Chiba)",
+                            "videoId": "xAz3yyb5elI",
+                            "thumbnail": "https://img.youtube.com/vi/xAz3yyb5elI/hqdefault.jpg",
+                            "artist": "Vibe Music"
+                        },
+                        {
+                            "title": "Rema, Selena Gomez - Calm Down (Official Music Video)",
+                            "videoId": "WcIcVapfqXw",
+                            "thumbnail": "https://img.youtube.com/vi/WcIcVapfqXw/hqdefault.jpg",
+                            "artist": "Selena Gomez"
+                        },
+                        {
+                            "title": "Gunna - fukumean [Official Visualizer]",
+                            "videoId": "l21wGxlWwPw",
+                            "thumbnail": "https://img.youtube.com/vi/l21wGxlWwPw/hqdefault.jpg",
+                            "artist": "Gunna"
+                        },
+                        {
+                            "title": "The Weeknd, Madonna, Playboi Carti - Popular (Official Music Video)",
+                            "videoId": "vt0i6nuqNEo",
+                            "thumbnail": "https://img.youtube.com/vi/vt0i6nuqNEo/hqdefault.jpg",
+                            "artist": "The Weeknd"
+                        },
+                        {
+                            "title": "Doja Cat - Paint The Town Red (Official Video)",
+                            "videoId": "m4_9TFeMfJE",
+                            "thumbnail": "https://img.youtube.com/vi/m4_9TFeMfJE/hqdefault.jpg",
+                            "artist": "Doja Cat"
+                        },
+                        {
+                            "title": "FloyyMenor, Cris MJ - Gata Only",
+                            "videoId": "-r687V8yqKY",
+                            "thumbnail": "https://img.youtube.com/vi/-r687V8yqKY/hqdefault.jpg",
+                            "artist": "FloyyMenor"
+                        },
+                        {
+                            "title": "정국 (Jung Kook) '3D (feat. Jack Harlow)' Official MV",
+                            "videoId": "mHNCM-YALSA",
+                            "thumbnail": "https://img.youtube.com/vi/mHNCM-YALSA/hqdefault.jpg",
+                            "artist": "HYBE LABELS"
+                        },
+                        {
+                            "title": "Benson Boone - Slow It Down (Official Music Video)",
+                            "videoId": "f4Y3b7un4LE",
+                            "thumbnail": "https://img.youtube.com/vi/f4Y3b7un4LE/hqdefault.jpg",
+                            "artist": "Benson Boone"
+                        },
+                        {
+                            "title": "Nicki Minaj \\u0026 Ice Spice – Barbie World (with Aqua) [Official Music Video]",
+                            "videoId": "CUj2AWEJnwQ",
+                            "thumbnail": "https://img.youtube.com/vi/CUj2AWEJnwQ/hqdefault.jpg",
+                            "artist": "Nicki Minaj"
+                        },
+                        {
+                            "title": "Jordan Adetunji - KEHLANI [Official Video]",
+                            "videoId": "ULCb3krc5LI",
+                            "thumbnail": "https://img.youtube.com/vi/ULCb3krc5LI/hqdefault.jpg",
+                            "artist": "Jordan Adetunji"
+                        },
+                        {
+                            "title": "Post Malone ft. Blake Shelton - Pour Me A Drink (Official Video)",
+                            "videoId": "RoeXmaSE7Lo",
+                            "thumbnail": "https://img.youtube.com/vi/RoeXmaSE7Lo/hqdefault.jpg",
+                            "artist": "Post Malone"
+                        },
+                        {
+                            "title": "Teddy Swims - Bad Dreams (Official Music Video)",
+                            "videoId": "Qh8QwVYOSVU",
+                            "thumbnail": "https://img.youtube.com/vi/Qh8QwVYOSVU/hqdefault.jpg",
+                            "artist": "Teddy Swims"
+                        },
+                        {
+                            "title": "CARNIVAL - Kanye West \\u0026 Ty Dolla $ign (ft Playboi Carti \\u0026 Rich The Kid) (lyrics)",
+                            "videoId": "4xZSClBlrfU",
+                            "thumbnail": "https://img.youtube.com/vi/4xZSClBlrfU/hqdefault.jpg",
+                            "artist": "Plug Hub"
+                        },
+                        {
+                            "title": "Muni Long - Made For Me (Official Music Video)",
+                            "videoId": "vYa3ak-3p60",
+                            "thumbnail": "https://img.youtube.com/vi/vYa3ak-3p60/hqdefault.jpg",
+                            "artist": "Muni Long"
+                        },
+                        {
+                            "title": "Olivia Rodrigo - obsessed (Official Music Video)",
+                            "videoId": "QXcjPySjdJU",
+                            "thumbnail": "https://img.youtube.com/vi/QXcjPySjdJU/hqdefault.jpg",
+                            "artist": "Olivia Rodrigo"
+                        },
+                        {
+                            "title": "Bryson Tiller - Whatever She Wants (Official Video)",
+                            "videoId": "-I8DrXXGd9E",
+                            "thumbnail": "https://img.youtube.com/vi/-I8DrXXGd9E/hqdefault.jpg",
+                            "artist": "Bryson Tiller"
+                        },
+                        {
+                            "title": "Toosii - Favorite Song (Official Video)",
+                            "videoId": "4D89Qr5vH6U",
+                            "thumbnail": "https://img.youtube.com/vi/4D89Qr5vH6U/hqdefault.jpg",
+                            "artist": "Toosii "
+                        },
+                        {
+                            "title": "Bailey Zimmerman - Religiously (Official Music Video)",
+                            "videoId": "UYCWaK6Sbik",
+                            "thumbnail": "https://img.youtube.com/vi/UYCWaK6Sbik/hqdefault.jpg",
+                            "artist": "Bailey Zimmerman"
+                        },
+                        {
+                            "title": "Lil Durk - All My Life ft. J. Cole",
+                            "videoId": "Z4N8lzKNfy4",
+                            "thumbnail": "https://img.youtube.com/vi/Z4N8lzKNfy4/hqdefault.jpg",
+                            "artist": "Lil Durk"
+                        },
+                        {
+                            "title": "Billie Eilish - What Was I Made For? (Official Music Video)",
+                            "videoId": "cW8VLC9nnTo",
+                            "thumbnail": "https://img.youtube.com/vi/cW8VLC9nnTo/hqdefault.jpg",
+                            "artist": "Billie Eilish"
+                        },
+                        {
+                            "title": "Metro Boomin, The Weeknd, 21 Savage - Creepin' (Visualizer)",
+                            "videoId": "61ymOWwOwuk",
+                            "thumbnail": "https://img.youtube.com/vi/61ymOWwOwuk/hqdefault.jpg",
+                            "artist": "Metro Boomin"
+                        },
+                        {
+                            "title": "The Weeknd, JENNIE, Lily-Rose Depp - One Of The Girls (Official Video)",
+                            "videoId": "Mx92lTYxrJQ",
+                            "thumbnail": "https://img.youtube.com/vi/Mx92lTYxrJQ/hqdefault.jpg",
+                            "artist": "The Weeknd"
+                        },
+                        {
+                            "title": "SZA - Saturn",
+                            "videoId": "V2G8ESoDXm8",
+                            "thumbnail": "https://img.youtube.com/vi/V2G8ESoDXm8/hqdefault.jpg",
+                            "artist": "SZA"
+                        },
+                        {
+                            "title": "Taylor Swift ft. Ice Spice - Karma (Official Music Video)",
+                            "videoId": "XzOvgu3GPwY",
+                            "thumbnail": "https://img.youtube.com/vi/XzOvgu3GPwY/hqdefault.jpg",
+                            "artist": "Taylor Swift"
+                        },
+                        {
+                            "title": "Olivia Rodrigo - bad idea right? (Official Video)",
+                            "videoId": "Dj9qJsJTsjQ",
+                            "thumbnail": "https://img.youtube.com/vi/Dj9qJsJTsjQ/hqdefault.jpg",
+                            "artist": "Olivia Rodrigo"
+                        },
+                        {
+                            "title": "Jelly Roll - \\\"NEED A FAVOR\\\" (Official Music Video)",
+                            "videoId": "P1nRboaLTzU",
+                            "thumbnail": "https://img.youtube.com/vi/P1nRboaLTzU/hqdefault.jpg",
+                            "artist": "Jelly Roll"
+                        },
+                        {
+                            "title": "Taylor Swift - Anti-Hero (Official Music Video)",
+                            "videoId": "b1kbLwvqugk",
+                            "thumbnail": "https://img.youtube.com/vi/b1kbLwvqugk/hqdefault.jpg",
+                            "artist": "Taylor Swift"
+                        },
+                        {
+                            "title": "Oliver Anthony - Rich Men North Of Richmond",
+                            "videoId": "sqSA-SY5Hro",
+                            "thumbnail": "https://img.youtube.com/vi/sqSA-SY5Hro/hqdefault.jpg",
+                            "artist": "radiowv"
+                        },
+                        {
+                            "title": "Morgan Wallen - Thinkin’ Bout Me",
+                            "videoId": "5DCdL1zdpdM",
+                            "thumbnail": "https://img.youtube.com/vi/5DCdL1zdpdM/hqdefault.jpg",
+                            "artist": "Morgan Wallen"
+                        },
+                        {
+                            "title": "SZA - Kill Bill (Audio)",
+                            "videoId": "SQnc1QibapQ",
+                            "thumbnail": "https://img.youtube.com/vi/SQnc1QibapQ/hqdefault.jpg",
+                            "artist": "SZA"
+                        },
+                        {
+                            "title": "Kenya Grace - Strangers (Official Lyric Video)",
+                            "videoId": "S2TaAcwC_zI",
+                            "thumbnail": "https://img.youtube.com/vi/S2TaAcwC_zI/hqdefault.jpg",
+                            "artist": "Kenya Grace"
+                        },
+                        {
+                            "title": "Mitski - My Love Mine All Mine (Official Video)",
+                            "videoId": "vx4kLgnFexo",
+                            "thumbnail": "https://img.youtube.com/vi/vx4kLgnFexo/hqdefault.jpg",
+                            "artist": "Mitski"
+                        },
+                        {
+                            "title": "정국 (Jung Kook) 'Seven (feat. Latto)' Official MV",
+                            "videoId": "QU9c0053UAU",
+                            "thumbnail": "https://img.youtube.com/vi/QU9c0053UAU/hqdefault.jpg",
+                            "artist": "HYBE LABELS"
+                        },
+                        {
+                            "title": "Travis Scott - FE!N (Official Audio) ft. Playboi Carti",
+                            "videoId": "U-l4ya3ejko",
+                            "thumbnail": "https://img.youtube.com/vi/U-l4ya3ejko/hqdefault.jpg",
+                            "artist": "Travis Scott"
+                        },
+                        {
+                            "title": "Tems - Me \\u0026 U (Official Video)",
+                            "videoId": "1JltlSJH5bY",
+                            "thumbnail": "https://img.youtube.com/vi/1JltlSJH5bY/hqdefault.jpg",
+                            "artist": "Tems"
+                        },
+                        {
+                            "title": "The Weeknd, Ariana Grande - Die For You (Remix / Lyric Video)",
+                            "videoId": "YQ-qToZUybM",
+                            "thumbnail": "https://img.youtube.com/vi/YQ-qToZUybM/hqdefault.jpg",
+                            "artist": "The Weeknd"
+                        },
+                        {
+                            "title": "Hozier - Too Sweet (Official Lyric Video)",
+                            "videoId": "aezstCBHOPQ",
+                            "thumbnail": "https://img.youtube.com/vi/aezstCBHOPQ/hqdefault.jpg",
+                            "artist": "Hozier"
+                        },
+                        {
+                            "title": "Taylor Swift - I Can Do It With A Broken Heart (Official Video)",
+                            "videoId": "Sl6en1NPTYM",
+                            "thumbnail": "https://img.youtube.com/vi/Sl6en1NPTYM/hqdefault.jpg",
+                            "artist": "Taylor Swift"
+                        },
+                        {
+                            "title": "Shaboozey - A Bar Song (Tipsy) (Lyrics)",
+                            "videoId": "9PlS_bGJ5c4",
+                            "thumbnail": "https://img.youtube.com/vi/9PlS_bGJ5c4/hqdefault.jpg",
+                            "artist": "Pizza Music"
+                        }
+                    ]
+                },
+                {
                     "name": "Year-End Hot 100 Singles of 2023",
                     "description": "Billboard Year-End Hot 100 Singles of 2023",
                     "songs": [
@@ -2864,6 +3470,12 @@
                             "artist": "Creed"
                         },
                         {
+                            "title": "Creed - One Last Breath (Official HD Music Video)",
+                            "videoId": "qnkuBUAwfe0",
+                            "thumbnail": "https://i.ytimg.com/vi/qnkuBUAwfe0/hqdefault.jpg?sqp=-oaymwEWCKgBEF5IWvKriqkDCQgBFQAAiEIYAQ==\u0026rs=AOn4CLAa3eTj5SmY8IbXFm-RvxPPhgjVyw",
+                            "artist": "Creed"
+                        },
+                        {
                             "title": "Sisqo - Thong Song (Official Music Video)",
                             "videoId": "Oai1V7kaFBk",
                             "thumbnail": "https://img.youtube.com/vi/Oai1V7kaFBk/hqdefault.jpg",
@@ -5213,6 +5825,612 @@
         {
             "name": "Hip-Hop & Rap",
             "playlists": [
+                {
+                    "name": "Rap & Hip Hop 2024",
+                    "description": "Rap 2024 - New Rap Songs - Rap Music Playlist - Hip Hop 2024",
+                    "songs": [
+                        {
+                            "title": "Hanumankind – Big Dawgs | Ft. Kalmi (Official Music Video) | Def Jam India",
+                            "videoId": "hOHKltAiKXQ",
+                            "thumbnail": "https://img.youtube.com/vi/hOHKltAiKXQ/hqdefault.jpg",
+                            "artist": "Hanumankind"
+                        },
+                        {
+                            "title": "Not Like Us",
+                            "videoId": "T6eK-2OQtew",
+                            "thumbnail": "https://img.youtube.com/vi/T6eK-2OQtew/hqdefault.jpg",
+                            "artist": "Kendrick Lamar"
+                        },
+                        {
+                            "title": "DRAKE - FAMILY MATTERS",
+                            "videoId": "ZkXG3ZrXlbc",
+                            "thumbnail": "https://img.youtube.com/vi/ZkXG3ZrXlbc/hqdefault.jpg",
+                            "artist": "Drake"
+                        },
+                        {
+                            "title": "Kendrick Lamar - Euphoria (Lyrics) (Drake Diss)",
+                            "videoId": "_sJ79aDQTeQ",
+                            "thumbnail": "https://img.youtube.com/vi/_sJ79aDQTeQ/hqdefault.jpg",
+                            "artist": "VibesOnly"
+                        },
+                        {
+                            "title": "Future, Metro Boomin, Kendrick Lamar - Like That (Official Audio)",
+                            "videoId": "N9bKBAA22Go",
+                            "thumbnail": "https://img.youtube.com/vi/N9bKBAA22Go/hqdefault.jpg",
+                            "artist": "Future"
+                        },
+                        {
+                            "title": "Eminem - Houdini [Official Music Video]",
+                            "videoId": "22tVWwmTie8",
+                            "thumbnail": "https://img.youtube.com/vi/22tVWwmTie8/hqdefault.jpg",
+                            "artist": "EminemMusic"
+                        },
+                        {
+                            "title": "Travis Scott - FE!N ft. Playboi Carti",
+                            "videoId": "B9synWjqBn8",
+                            "thumbnail": "https://img.youtube.com/vi/B9synWjqBn8/hqdefault.jpg",
+                            "artist": "Travis Scott"
+                        },
+                        {
+                            "title": "BIA, Lil Yachty - PISSED OFF (Official Music Video)",
+                            "videoId": "CQ8y7qYaYTQ",
+                            "thumbnail": "https://img.youtube.com/vi/CQ8y7qYaYTQ/hqdefault.jpg",
+                            "artist": "BIA"
+                        },
+                        {
+                            "title": "BigXthaPlug - The Largest (Official Music Video)",
+                            "videoId": "3QwZjhHcLZk",
+                            "thumbnail": "https://img.youtube.com/vi/3QwZjhHcLZk/hqdefault.jpg",
+                            "artist": "BigXthaPlug"
+                        },
+                        {
+                            "title": "Eminem - Tobey feat. Big Sean \\u0026 BabyTron (Official Music Video)",
+                            "videoId": "CanCZktm0TQ",
+                            "thumbnail": "https://img.youtube.com/vi/CanCZktm0TQ/hqdefault.jpg",
+                            "artist": "Lyrical Lemonade"
+                        },
+                        {
+                            "title": "Rod Wave - Numb (Official Video)",
+                            "videoId": "qAhK4LutXFE",
+                            "thumbnail": "https://img.youtube.com/vi/qAhK4LutXFE/hqdefault.jpg",
+                            "artist": "RodWave"
+                        },
+                        {
+                            "title": "Offset x Gunna - Style Rare",
+                            "videoId": "viAk4pUCzSs",
+                            "thumbnail": "https://img.youtube.com/vi/viAk4pUCzSs/hqdefault.jpg",
+                            "artist": "OFFSETYRN"
+                        },
+                        {
+                            "title": "Future - TOO FAST (Official Music Video)",
+                            "videoId": "1YHDGLqH1VM",
+                            "thumbnail": "https://img.youtube.com/vi/1YHDGLqH1VM/hqdefault.jpg",
+                            "artist": "Future"
+                        },
+                        {
+                            "title": "Roddy Ricch - Survivors Remorse [Official Music Video]",
+                            "videoId": "J5IeFzr2GgE",
+                            "thumbnail": "https://img.youtube.com/vi/J5IeFzr2GgE/hqdefault.jpg",
+                            "artist": "Roddy Ricch"
+                        },
+                        {
+                            "title": "Screwly G x BloodHound Q50 - \\\"Make Me Mad pt.1\\\" (Official Video)",
+                            "videoId": "oro2A3UwlmA",
+                            "thumbnail": "https://img.youtube.com/vi/oro2A3UwlmA/hqdefault.jpg",
+                            "artist": "Screwly G"
+                        },
+                        {
+                            "title": "Eminem - Habits (feat. White Gold) [Official Audio]",
+                            "videoId": "BgqD-Bn5Quk",
+                            "thumbnail": "https://img.youtube.com/vi/BgqD-Bn5Quk/hqdefault.jpg",
+                            "artist": "EminemMusic"
+                        },
+                        {
+                            "title": "CENTRAL CEE FT. LIL BABY - BAND4BAND (MUSIC VIDEO)",
+                            "videoId": "pDddlvCfTiw",
+                            "thumbnail": "https://img.youtube.com/vi/pDddlvCfTiw/hqdefault.jpg",
+                            "artist": "Central Cee"
+                        },
+                        {
+                            "title": "Lil Durk - Turn Up A Notch (Official Video)",
+                            "videoId": "850IP1bKV2g",
+                            "thumbnail": "https://img.youtube.com/vi/850IP1bKV2g/hqdefault.jpg",
+                            "artist": "Lil Durk"
+                        },
+                        {
+                            "title": "Playboi Carti - ALL RED (Official Audio)",
+                            "videoId": "0age3DSgqQk",
+                            "thumbnail": "https://img.youtube.com/vi/0age3DSgqQk/hqdefault.jpg",
+                            "artist": "Playboi Carti"
+                        },
+                        {
+                            "title": "A$AP Rocky - Tailor Swif (Official Video)",
+                            "videoId": "5URefVYaJrA",
+                            "thumbnail": "https://img.youtube.com/vi/5URefVYaJrA/hqdefault.jpg",
+                            "artist": "ASAPROCKYUPTOWN"
+                        },
+                        {
+                            "title": "Eminem - Fuel (feat. JID) [Official Audio]",
+                            "videoId": "xVuYQCa9saw",
+                            "thumbnail": "https://img.youtube.com/vi/xVuYQCa9saw/hqdefault.jpg",
+                            "artist": "EminemMusic"
+                        },
+                        {
+                            "title": "Jordan Adetunji - KEHLANI [Official Video]",
+                            "videoId": "ULCb3krc5LI",
+                            "thumbnail": "https://img.youtube.com/vi/ULCb3krc5LI/hqdefault.jpg",
+                            "artist": "Jordan Adetunji"
+                        },
+                        {
+                            "title": "Breathe [Official Audio]",
+                            "videoId": "oXS8DxRYvbU",
+                            "thumbnail": "https://img.youtube.com/vi/oXS8DxRYvbU/hqdefault.jpg",
+                            "artist": "Yeat Music"
+                        },
+                        {
+                            "title": "Kendrick Lamar - meet the grahams (Lyrics) Drake Diss",
+                            "videoId": "j3OhV1och50",
+                            "thumbnail": "https://img.youtube.com/vi/j3OhV1och50/hqdefault.jpg",
+                            "artist": "BagOnly"
+                        },
+                        {
+                            "title": "Chris Brown - Weakest Link (Quavo Diss) [Lyrics]",
+                            "videoId": "wPljp4h4NuQ",
+                            "thumbnail": "https://img.youtube.com/vi/wPljp4h4NuQ/hqdefault.jpg",
+                            "artist": "Stereohearts R\\u0026B"
+                        },
+                        {
+                            "title": "Eminem - Kyrie \\u0026 Luka feat. 2 Chainz [Official Audio]",
+                            "videoId": "Ffm9R18XDdw",
+                            "thumbnail": "https://img.youtube.com/vi/Ffm9R18XDdw/hqdefault.jpg",
+                            "artist": "EminemMusic"
+                        },
+                        {
+                            "title": "Key Glock, Young Dolph - Let's Go (Remix) (Official Visualizer)",
+                            "videoId": "emg78D2hz3A",
+                            "thumbnail": "https://img.youtube.com/vi/emg78D2hz3A/hqdefault.jpg",
+                            "artist": "Key Glock"
+                        },
+                        {
+                            "title": "Ndotz - Embrace It",
+                            "videoId": "48lhqX3jpKY",
+                            "thumbnail": "https://img.youtube.com/vi/48lhqX3jpKY/hqdefault.jpg",
+                            "artist": "BROKE"
+                        },
+                        {
+                            "title": "Mustard - Parking Lot feat. Travis Scott (Official Music Video)",
+                            "videoId": "qyOcPYeFByA",
+                            "thumbnail": "https://img.youtube.com/vi/qyOcPYeFByA/hqdefault.jpg",
+                            "artist": "Mustard"
+                        },
+                        {
+                            "title": "J. Cole - Crocodile Tearz (Official Audio)",
+                            "videoId": "C3QfwT7CqoI",
+                            "thumbnail": "https://img.youtube.com/vi/C3QfwT7CqoI/hqdefault.jpg",
+                            "artist": "J. Cole"
+                        },
+                        {
+                            "title": "Shoreline Mafia - HEAT STICK (OHGEESY \\u0026 FENIX FLEXIN)  [Official Music Video]",
+                            "videoId": "xKEY6THtwuA",
+                            "thumbnail": "https://img.youtube.com/vi/xKEY6THtwuA/hqdefault.jpg",
+                            "artist": "Shoreline Mafia"
+                        },
+                        {
+                            "title": "Future, Metro Boomin, Travis Scott, Playboi Carti - Type Shit (Official Video)",
+                            "videoId": "I0fgkcTbBoI",
+                            "thumbnail": "https://img.youtube.com/vi/I0fgkcTbBoI/hqdefault.jpg",
+                            "artist": "Future"
+                        },
+                        {
+                            "title": "Gunna - Prada Dem (feat. Offset) [Official Video]",
+                            "videoId": "Tqjw-H4QyG0",
+                            "thumbnail": "https://img.youtube.com/vi/Tqjw-H4QyG0/hqdefault.jpg",
+                            "artist": "Gunna"
+                        },
+                        {
+                            "title": "NLE Choppa - Stickin And Movin (Official Music Video)",
+                            "videoId": "GzkT9bgZ0Es",
+                            "thumbnail": "https://img.youtube.com/vi/GzkT9bgZ0Es/hqdefault.jpg",
+                            "artist": "NLE CHOPPA"
+                        },
+                        {
+                            "title": "LL COOL J - Murdergram Deux ft. Eminem",
+                            "videoId": "50Tl8E0Vvms",
+                            "thumbnail": "https://img.youtube.com/vi/50Tl8E0Vvms/hqdefault.jpg",
+                            "artist": "LL COOL J"
+                        },
+                        {
+                            "title": "Polo G - Angels in the Sky (Official Video)",
+                            "videoId": "tBnOLGpBhc4",
+                            "thumbnail": "https://img.youtube.com/vi/tBnOLGpBhc4/hqdefault.jpg",
+                            "artist": "Polo G"
+                        },
+                        {
+                            "title": "Rod Wave - Great Gatsby (Official Audio)",
+                            "videoId": "nM6ayGKXFCw",
+                            "thumbnail": "https://img.youtube.com/vi/nM6ayGKXFCw/hqdefault.jpg",
+                            "artist": "RodWave"
+                        },
+                        {
+                            "title": "GloRilla, Megan Thee Stallion - Wanna Be",
+                            "videoId": "BT_83vSP1es",
+                            "thumbnail": "https://img.youtube.com/vi/BT_83vSP1es/hqdefault.jpg",
+                            "artist": "theofficialGloRilla"
+                        },
+                        {
+                            "title": "Sheff G - Everything Lit (Official Video)",
+                            "videoId": "9JBaUcYOJ48",
+                            "thumbnail": "https://img.youtube.com/vi/9JBaUcYOJ48/hqdefault.jpg",
+                            "artist": "Sheff G"
+                        },
+                        {
+                            "title": "LeoStayTrill - Pink Lemonade [Official Music Video]",
+                            "videoId": "zeLxig8ffwo",
+                            "thumbnail": "https://img.youtube.com/vi/zeLxig8ffwo/hqdefault.jpg",
+                            "artist": "LeoStayTrill"
+                        },
+                        {
+                            "title": "21 Savage - redrum (Official Music Video)",
+                            "videoId": "U4mADkt6o-M",
+                            "thumbnail": "https://img.youtube.com/vi/U4mADkt6o-M/hqdefault.jpg",
+                            "artist": "21 Savage"
+                        },
+                        {
+                            "title": "BigXthaPlug - Mmhmm (Official Video)",
+                            "videoId": "x_WayannFys",
+                            "thumbnail": "https://img.youtube.com/vi/x_WayannFys/hqdefault.jpg",
+                            "artist": "BigXthaPlug"
+                        },
+                        {
+                            "title": "Lil Tecca - Down With Me (Official Video)",
+                            "videoId": "AH85mAXA-30",
+                            "thumbnail": "https://img.youtube.com/vi/AH85mAXA-30/hqdefault.jpg",
+                            "artist": "Lil Tecca"
+                        },
+                        {
+                            "title": "Gunna - Bittersweet [Official Video]",
+                            "videoId": "nH3_n9w-V4Y",
+                            "thumbnail": "https://img.youtube.com/vi/nH3_n9w-V4Y/hqdefault.jpg",
+                            "artist": "Gunna"
+                        },
+                        {
+                            "title": "Rich Amiri - One Call (Official Music Video)",
+                            "videoId": "Q7N99EzNQrw",
+                            "thumbnail": "https://img.youtube.com/vi/Q7N99EzNQrw/hqdefault.jpg",
+                            "artist": "Rich Amiri"
+                        },
+                        {
+                            "title": "Moneybagg Yo, Rob49 - Bussin [Official Music Video]",
+                            "videoId": "0LhqaZHWu64",
+                            "thumbnail": "https://img.youtube.com/vi/0LhqaZHWu64/hqdefault.jpg",
+                            "artist": "MoneyBagg Yo"
+                        },
+                        {
+                            "title": "Jack Harlow - Lovin On Me [Official Music Video]",
+                            "videoId": "Iq8h3GEe22o",
+                            "thumbnail": "https://img.youtube.com/vi/Iq8h3GEe22o/hqdefault.jpg",
+                            "artist": "Jack Harlow"
+                        },
+                        {
+                            "title": "Central Cee - Entrapreneur [Music Video]",
+                            "videoId": "-LATBW89Imo",
+                            "thumbnail": "https://img.youtube.com/vi/-LATBW89Imo/hqdefault.jpg",
+                            "artist": "Central Cee"
+                        },
+                        {
+                            "title": "Lil Uzi Vert - Red Moon [Official Music Video]",
+                            "videoId": "2NzuR5OLvnQ",
+                            "thumbnail": "https://img.youtube.com/vi/2NzuR5OLvnQ/hqdefault.jpg",
+                            "artist": "LIL UZI VERT"
+                        },
+                        {
+                            "title": "Tee Grizzley - Swear to God (Feat. Future) [Official Video]",
+                            "videoId": "jBlC5AOYoBs",
+                            "thumbnail": "https://img.youtube.com/vi/jBlC5AOYoBs/hqdefault.jpg",
+                            "artist": "Tee Grizzley"
+                        },
+                        {
+                            "title": "Lil Tecca - 120 (Official Video)",
+                            "videoId": "4D_4jYmmhtg",
+                            "thumbnail": "https://img.youtube.com/vi/4D_4jYmmhtg/hqdefault.jpg",
+                            "artist": "Lil Tecca"
+                        },
+                        {
+                            "title": "CENTRAL CEE X RAYE - MOI (MUSIC VIDEO)",
+                            "videoId": "Fc09UUvysbE",
+                            "thumbnail": "https://img.youtube.com/vi/Fc09UUvysbE/hqdefault.jpg",
+                            "artist": "Central Cee"
+                        },
+                        {
+                            "title": "GloRilla - TGIF (Official Music Video)",
+                            "videoId": "zP6eqCOM7tk",
+                            "thumbnail": "https://img.youtube.com/vi/zP6eqCOM7tk/hqdefault.jpg",
+                            "artist": "theofficialGloRilla"
+                        },
+                        {
+                            "title": "J. Cole - H.Y.B. feat. Bas \\u0026 Central Cee (Official Audio)",
+                            "videoId": "NW3ruk8roJU",
+                            "thumbnail": "https://img.youtube.com/vi/NW3ruk8roJU/hqdefault.jpg",
+                            "artist": "J. Cole"
+                        },
+                        {
+                            "title": "YoungBoy Never Broke Again - No Time [Official Music Video]",
+                            "videoId": "iis_5y50Z8o",
+                            "thumbnail": "https://img.youtube.com/vi/iis_5y50Z8o/hqdefault.jpg",
+                            "artist": "YoungBoy Never Broke Again"
+                        },
+                        {
+                            "title": "Future, Metro Boomin, Travis Scott - Cinderella (Official Audio)",
+                            "videoId": "onP2eoO7byc",
+                            "thumbnail": "https://img.youtube.com/vi/onP2eoO7byc/hqdefault.jpg",
+                            "artist": "Future"
+                        },
+                        {
+                            "title": "As We Speak (feat. Drake) [Official Audio]",
+                            "videoId": "ttl_kf1y2gU",
+                            "thumbnail": "https://img.youtube.com/vi/ttl_kf1y2gU/hqdefault.jpg",
+                            "artist": "Yeat Music"
+                        },
+                        {
+                            "title": "310babii - Soak City (Do It) (Official Video)",
+                            "videoId": "qG27ZXU6QBQ",
+                            "thumbnail": "https://img.youtube.com/vi/qG27ZXU6QBQ/hqdefault.jpg",
+                            "artist": "310babii"
+                        },
+                        {
+                            "title": "Lil Durk - Smurk Carter (Official Video)",
+                            "videoId": "OFlilpsRuMg",
+                            "thumbnail": "https://img.youtube.com/vi/OFlilpsRuMg/hqdefault.jpg",
+                            "artist": "Lil Durk"
+                        },
+                        {
+                            "title": "Don Toliver - BANDIT [Official Music Video]",
+                            "videoId": "FauDn2LkeQ4",
+                            "thumbnail": "https://img.youtube.com/vi/FauDn2LkeQ4/hqdefault.jpg",
+                            "artist": "Don Toliver"
+                        },
+                        {
+                            "title": "Bryson Tiller - Whatever She Wants (Official Video)",
+                            "videoId": "-I8DrXXGd9E",
+                            "thumbnail": "https://img.youtube.com/vi/-I8DrXXGd9E/hqdefault.jpg",
+                            "artist": "Bryson Tiller"
+                        },
+                        {
+                            "title": "Sexyy Red \\\"Get It Sexyy\\\" (Official Video)",
+                            "videoId": "hUE6Haw_3zg",
+                            "thumbnail": "https://img.youtube.com/vi/hUE6Haw_3zg/hqdefault.jpg",
+                            "artist": "Sexyy Red"
+                        },
+                        {
+                            "title": "BossMan Dlow - Get In With Me (Official Video)",
+                            "videoId": "KmhAQJqOaIY",
+                            "thumbnail": "https://img.youtube.com/vi/KmhAQJqOaIY/hqdefault.jpg",
+                            "artist": "BossMan Dlow"
+                        },
+                        {
+                            "title": "GloRilla - Yeah Glo! (Official Music Video)",
+                            "videoId": "voT9hOs6FZc",
+                            "thumbnail": "https://img.youtube.com/vi/voT9hOs6FZc/hqdefault.jpg",
+                            "artist": "theofficialGloRilla"
+                        },
+                        {
+                            "title": "¥$, Ye, Ty Dolla $ign - CARNIVAL ft. Playboi Carti \\u0026 Rich The Kid",
+                            "videoId": "pEskP0ulPlA",
+                            "thumbnail": "https://img.youtube.com/vi/pEskP0ulPlA/hqdefault.jpg",
+                            "artist": "Kanye West"
+                        },
+                        {
+                            "title": "YoungBoy Never Broke Again - Return of Goldie [Official Music Video]",
+                            "videoId": "KFEoS80xBCE",
+                            "thumbnail": "https://img.youtube.com/vi/KFEoS80xBCE/hqdefault.jpg",
+                            "artist": "YoungBoy Never Broke Again"
+                        },
+                        {
+                            "title": "Megan Thee Stallion - HISS [Official Video]",
+                            "videoId": "XVgCLQ_JQfU",
+                            "thumbnail": "https://img.youtube.com/vi/XVgCLQ_JQfU/hqdefault.jpg",
+                            "artist": "Megan Thee Stallion"
+                        },
+                        {
+                            "title": "Nicki Minaj - Let Me Calm Down (feat. J. Cole) [Official Audio]",
+                            "videoId": "BmYSeOIMLq4",
+                            "thumbnail": "https://img.youtube.com/vi/BmYSeOIMLq4/hqdefault.jpg",
+                            "artist": "Nicki Minaj"
+                        },
+                        {
+                            "title": "Megan Thee Stallion - Mamushi (feat. Yuki Chiba) [Official Audio]",
+                            "videoId": "mPeWgGMSb0s",
+                            "thumbnail": "https://img.youtube.com/vi/mPeWgGMSb0s/hqdefault.jpg",
+                            "artist": "Megan Thee Stallion"
+                        },
+                        {
+                            "title": "ScHoolboy Q - Back n Love feat. Devin Malik",
+                            "videoId": "Q3vuOP5iY1A",
+                            "thumbnail": "https://img.youtube.com/vi/Q3vuOP5iY1A/hqdefault.jpg",
+                            "artist": "ScHoolboy Q"
+                        },
+                        {
+                            "title": "Kodak Black - Shampoo [Official Music Video]",
+                            "videoId": "accWa7GGCd4",
+                            "thumbnail": "https://img.youtube.com/vi/accWa7GGCd4/hqdefault.jpg",
+                            "artist": "Kodak Black"
+                        },
+                        {
+                            "title": "Peezy - All Black Trucks (Official Video)",
+                            "videoId": "7ZFA52VX144",
+                            "thumbnail": "https://img.youtube.com/vi/7ZFA52VX144/hqdefault.jpg",
+                            "artist": "GHETTO "
+                        },
+                        {
+                            "title": "Rob49 - Wassam Baby (with Lil Wayne) [Official Video]",
+                            "videoId": "Ztwa2xFrWII",
+                            "thumbnail": "https://img.youtube.com/vi/Ztwa2xFrWII/hqdefault.jpg",
+                            "artist": "ROB49"
+                        },
+                        {
+                            "title": "Sleepy Hallow - Cupid's Guidance (Official Video)",
+                            "videoId": "0ZNJ5IdW9UY",
+                            "thumbnail": "https://img.youtube.com/vi/0ZNJ5IdW9UY/hqdefault.jpg",
+                            "artist": "Sleepy Hallow"
+                        },
+                        {
+                            "title": "Famous Dex, Rich The Kid \\u0026 Jay Critch - Big Dawg (Official Music Video)",
+                            "videoId": "Nc7UlOMgLEw",
+                            "thumbnail": "https://img.youtube.com/vi/Nc7UlOMgLEw/hqdefault.jpg",
+                            "artist": "Lyrical Lemonade"
+                        },
+                        {
+                            "title": "Kyle Richh x Jenn Carter x TaTa x MCVERTT - BENT (OFFICIAL MUSIC VIDEO) [41]",
+                            "videoId": "RmYf6qA5QIY",
+                            "thumbnail": "https://img.youtube.com/vi/RmYf6qA5QIY/hqdefault.jpg",
+                            "artist": "Kyle Richh"
+                        },
+                        {
+                            "title": "Lil Mabu x ChriseanRock - MR. TAKE YA B*TCH (Official Music Video)",
+                            "videoId": "b_rpj_nMWBI",
+                            "thumbnail": "https://img.youtube.com/vi/b_rpj_nMWBI/hqdefault.jpg",
+                            "artist": "Lil Mabu"
+                        },
+                        {
+                            "title": "2 Chainz, Lil Wayne - Presha (Lyric Video)",
+                            "videoId": "0Mmv28qrObA",
+                            "thumbnail": "https://img.youtube.com/vi/0Mmv28qrObA/hqdefault.jpg",
+                            "artist": "2 Chainz"
+                        },
+                        {
+                            "title": "Drake - First Person Shooter ft. J. Cole",
+                            "videoId": "Xty2gi5cMa8",
+                            "thumbnail": "https://img.youtube.com/vi/Xty2gi5cMa8/hqdefault.jpg",
+                            "artist": "Drake"
+                        },
+                        {
+                            "title": "Lil Mabu x Fivio Foreign - TEACH ME HOW TO DRILL (Official Music Video)",
+                            "videoId": "fW1QcEAy4rg",
+                            "thumbnail": "https://img.youtube.com/vi/fW1QcEAy4rg/hqdefault.jpg",
+                            "artist": "Lil Mabu"
+                        },
+                        {
+                            "title": "Nicki Minaj - Needle (feat. Drake) [Official Audio]",
+                            "videoId": "5KDy94cpTS4",
+                            "thumbnail": "https://img.youtube.com/vi/5KDy94cpTS4/hqdefault.jpg",
+                            "artist": "Nicki Minaj"
+                        },
+                        {
+                            "title": "Benny The Butcher, Lil Wayne - Big Dog",
+                            "videoId": "-nZAav393Jg",
+                            "thumbnail": "https://img.youtube.com/vi/-nZAav393Jg/hqdefault.jpg",
+                            "artist": "Benny the Butcher"
+                        },
+                        {
+                            "title": "Offset - Say My Grace Ft. Travis Scott (Official Music Video)",
+                            "videoId": "eQrJS8IjKxo",
+                            "thumbnail": "https://img.youtube.com/vi/eQrJS8IjKxo/hqdefault.jpg",
+                            "artist": "OFFSETYRN"
+                        },
+                        {
+                            "title": "Young Thug - From A Man [Official Video]",
+                            "videoId": "ubNXxF_upSI",
+                            "thumbnail": "https://img.youtube.com/vi/ubNXxF_upSI/hqdefault.jpg",
+                            "artist": "Young Thug"
+                        },
+                        {
+                            "title": "Burna Boy - City Boys [Official Music Video]",
+                            "videoId": "hLDQ88vAhIs",
+                            "thumbnail": "https://img.youtube.com/vi/hLDQ88vAhIs/hqdefault.jpg",
+                            "artist": "Burna Boy"
+                        },
+                        {
+                            "title": "Tyga, YG, Lil Wayne - Brand New (Official Video)",
+                            "videoId": "tnrAmSV9Ulw",
+                            "thumbnail": "https://img.youtube.com/vi/tnrAmSV9Ulw/hqdefault.jpg",
+                            "artist": "Tyga"
+                        },
+                        {
+                            "title": "\\\"BACKR00MS\\\" FT TRAVIS SCOTT SEXISDEATH INDIANA420BITCH",
+                            "videoId": "ftaXMKV3ffE",
+                            "thumbnail": "https://img.youtube.com/vi/ftaXMKV3ffE/hqdefault.jpg",
+                            "artist": "Playboi Carti"
+                        },
+                        {
+                            "title": "Kodak Black - Lemme See",
+                            "videoId": "ViqnHpPL4M0",
+                            "thumbnail": "https://img.youtube.com/vi/ViqnHpPL4M0/hqdefault.jpg",
+                            "artist": "Kodak Black"
+                        },
+                        {
+                            "title": "Rick Ross, Meek Mill - SHAQ \\u0026 KOBE (Official Music Video)",
+                            "videoId": "o09Q-CGU6iA",
+                            "thumbnail": "https://img.youtube.com/vi/o09Q-CGU6iA/hqdefault.jpg",
+                            "artist": "Rick Ross"
+                        },
+                        {
+                            "title": "Lil Durk \\u0026 Kid Cudi - Guitar In My Room (Official Music Video)",
+                            "videoId": "auH4F8WLM8k",
+                            "thumbnail": "https://img.youtube.com/vi/auH4F8WLM8k/hqdefault.jpg",
+                            "artist": "Lyrical Lemonade"
+                        },
+                        {
+                            "title": "Lil Durk - F*ck U Thought",
+                            "videoId": "-jEShhcnxIM",
+                            "thumbnail": "https://img.youtube.com/vi/-jEShhcnxIM/hqdefault.jpg",
+                            "artist": "Lil Durk"
+                        },
+                        {
+                            "title": "Ken Carson - Fighting My Demons (Official Music Video)",
+                            "videoId": "YKkMR2l05Rs",
+                            "thumbnail": "https://img.youtube.com/vi/YKkMR2l05Rs/hqdefault.jpg",
+                            "artist": "Lyrical Lemonade"
+                        },
+                        {
+                            "title": "Rylo Rodriguez - \\\"Thang for you\\\" ft. NoCap (Official Music Video)",
+                            "videoId": "hpK16l6fDsg",
+                            "thumbnail": "https://img.youtube.com/vi/hpK16l6fDsg/hqdefault.jpg",
+                            "artist": "Rylo Rodriguez"
+                        },
+                        {
+                            "title": "YoungBoy Never Broke Again - My Address Public (Official Music Video)",
+                            "videoId": "J4myyqNi94Q",
+                            "thumbnail": "https://img.youtube.com/vi/J4myyqNi94Q/hqdefault.jpg",
+                            "artist": "YoungBoy Never Broke Again"
+                        },
+                        {
+                            "title": "Rod Wave - Call Your Friends (Official Video)",
+                            "videoId": "kC8YEw9h2-Q",
+                            "thumbnail": "https://img.youtube.com/vi/kC8YEw9h2-Q/hqdefault.jpg",
+                            "artist": "RodWave"
+                        },
+                        {
+                            "title": "Doja Cat - Paint The Town Red (Official Video)",
+                            "videoId": "m4_9TFeMfJE",
+                            "thumbnail": "https://img.youtube.com/vi/m4_9TFeMfJE/hqdefault.jpg",
+                            "artist": "Doja Cat"
+                        },
+                        {
+                            "title": "A Boogie Wit da Hoodie - Did Me Wrong (Directed by Kai Cenat) [Official Music Video]",
+                            "videoId": "Hyw5X6Ohw0k",
+                            "thumbnail": "https://img.youtube.com/vi/Hyw5X6Ohw0k/hqdefault.jpg",
+                            "artist": "A Boogie Wit da Hoodie"
+                        },
+                        {
+                            "title": "That Mexican OT - Johnny Dang (feat. Paul Wall \\u0026 Drodi) (Official Music Video)",
+                            "videoId": "tvmUrOSahsc",
+                            "thumbnail": "https://img.youtube.com/vi/tvmUrOSahsc/hqdefault.jpg",
+                            "artist": "That Mexican OT"
+                        },
+                        {
+                            "title": "Drake - Another Late Night ft. Lil Yachty (Official Music Video)",
+                            "videoId": "DGVjmJpCRUg",
+                            "thumbnail": "https://img.youtube.com/vi/DGVjmJpCRUg/hqdefault.jpg",
+                            "artist": "Lyrical Lemonade"
+                        },
+                        {
+                            "title": "J.I.D - Surround Sound (feat. 21 Savage \\u0026 Baby Tate) [Official Music Video]",
+                            "videoId": "Y19q-7VN2WI",
+                            "thumbnail": "https://img.youtube.com/vi/Y19q-7VN2WI/hqdefault.jpg",
+                            "artist": "JID"
+                        }
+                    ]
+                },
                 {
                     "name": "Best Rap & Hip Hop of All Time.",
                     "description": "Top 100 Greatest Hip-Hop Songs of All Time. Best Rap & Hip Hop",
